@@ -1,9 +1,55 @@
-.uk-offcanvas {
+.bmb-offcanvas {
     background-color: transparent;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 1024;
+    bottom: 0;
+    transform: translateX(-100%);
+    display: none;
+
+    &.animation-slide-in {
+        display: block;
+        animation: slideIn ease-in .5s forwards;
+    }
+
+    &.animation-slide-out {
+        animation-name: slideOut;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        display: block;
+
+        li {
+            animation-name: slideOutLink;
+            animation-timing-function: ease-out;
+            animation-duration: .3s;
+            transform: translateX(0%);
+        }
+    }
 
     li {
+        animation-name: slideInLink;
+        animation-duration: .5s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        transform: translateX(-100%);
+
         &:not(:last-of-type) {
-            border-bottom: 1px solid rgba($white, .3);
+            // border-bottom: 1px solid rgba($white, .3);
+            position: relative;
+
+            &::before {
+                position: absolute;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: rgba($white, .3);
+                bottom: 0;
+            }
         }
     }
 
@@ -14,8 +60,9 @@
     }
 }
 
-.uk-offcanvas-bar {
+.bmb-offcanvas-bar {
     background-color: $blue;
+    height: 100%;
     padding: 20px 40px;
 
     ul {
@@ -26,5 +73,21 @@
         ul {
             width: 70%;
         }
+    }
+}
+
+$links: 8;
+
+// Set delay per List Item
+@for $i from 1 through $links {
+    .nav-link:nth-child(#{$i}) {
+        animation-delay: .045s * $i;
+    }
+}
+
+// Set delay per List Item
+@for $i from 1 through $links {
+    .animation-slide-out .nav-link:nth-child(#{$i}) {
+        animation-delay: .037s * $i;
     }
 }

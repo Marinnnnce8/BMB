@@ -36,7 +36,7 @@ $iconLineGap: 5px;
             &:nth-child(2) {
                 top: 50%;
                 transition: width .5s cubic-bezier(.68, -.55, .265, 1.55);
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, -30%);
             }
 
             &:last-child {
@@ -69,7 +69,7 @@ $iconLineGap: 5px;
     }
 }
 
-.uk-offcanvas.uk-open~.burger-menu {
+.bmb-offcanvas[aria-hidden='false']~.burger-menu {
     >span>span {
         &:first-child {
             transform: translateX(-50%) translateY(2px + $iconLineGap) rotate(45deg);

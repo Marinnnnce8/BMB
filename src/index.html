@@ -49,23 +49,23 @@
 					<li><a class="uk-text-uppercase" href="#uber-uns" data-uk-scroll>ÜBER UNS</a></li>
 					<li><a class="uk-text-uppercase" href="#kontakt" data-uk-scroll>KONTAKT</a></li>
 				</ul>
-				<div id="offcanvas-nav-primary" class="uk-width-1-1" data-uk-offcanvas>
-					<div class="uk-offcanvas-bar uk-width-1-1 uk-flex uk-flex-middle uk-flex-column">
+				<div class="uk-width-1-1 bmb-offcanvas js-menu" aria-hidden="true" aria-hidden='true'>
+					<div class="bmb-offcanvas-bar uk-width-1-1 uk-flex uk-flex-middle uk-flex-column">
 
 						<ul class="uk-nav uk-nav-center uk-margin-auto-vertical">
-							<li class="uk-active"><a class="uk-text-light" href="./index.html">Start</a></li>
-							<li><a class="uk-text-bold" href="#druck" data-uk-scroll>Druck</a></li>
-							<li><a class="uk-text-bold" href="#lettershop" data-uk-scroll>Lettershop</a></li>
-							<li><a class="uk-text-bold" href="#produkte" data-uk-scroll>Produkte</a></li>
-							<li><a class="uk-text-bold" href="#uber-uns" data-uk-scroll>Über Uns</a></li>
-							<li><a class="uk-text-bold" href="#kontakt" data-uk-scroll>Kontakt</a></li>
-							<li><a class="uk-text-light" href="./impressum.html">Impressum</a></li>
-							<li><a class="uk-text-light" href="./datenschutz.html">Datenschutz</a></li>
+							<li class="uk-active nav-link"><a class="uk-text-light" href="./index.html">Start</a></li>
+							<li class="nav-link"><a class="uk-text-bold js-scroll" href="#druck" data-uk-scroll>Druck</a></li>
+							<li class="nav-link"><a class="uk-text-bold js-scroll" href="#lettershop" data-uk-scroll>Lettershop</a></li>
+							<li class="nav-link"><a class="uk-text-bold js-scroll" href="#produkte" data-uk-scroll>Produkte</a></li>
+							<li class="nav-link"><a class="uk-text-bold js-scroll" href="#uber-uns" data-uk-scroll>Über Uns</a></li>
+							<li class="nav-link"><a class="uk-text-bold js-scroll" href="#kontakt" data-uk-scroll>Kontakt</a></li>
+							<li class="nav-link"><a class="uk-text-light" href="./impressum.html">Impressum</a></li>
+							<li class="nav-link"><a class="uk-text-light" href="./datenschutz.html">Datenschutz</a></li>
 						</ul>
 					</div>
 				</div>
-				<button class="uk-button burger-menu uk-flex uk-flex-center uk-flex-middle"
-					data-uk-toggle="target: #offcanvas-nav-primary" aria-label="Navigation öffnen">
+				<button class="burger-menu js-burger uk-flex uk-flex-center uk-flex-middle"
+					aria-label="Navigation öffnen">
 					<span>
 						<span role="presentation"></span>
 						<span role="presentation"></span>
@@ -103,8 +103,13 @@
 			</ul>
 		</div>
 
-		<section class="banner uk-background-cover uk-position-relative uk-overflow-hidden" data-uk-img
-			style="background-image: url('./img/banner-img.png');">
+		<section class="banner uk-position-relative uk-overflow-hidden">
+			<span class="uk-background-cover uk-position-cover" data-uk-img
+				style="background-image: url('./img/banner-img.png');" role="presentation"></span>
+			<span class="uk-background-cover uk-position-cover" data-uk-img
+				style="background-image: url('./img/keyvisual-tablet.jpg');" role="presentation"></span>
+			<span class="uk-background-cover uk-position-cover" data-uk-img
+				style="background-image: url('./img/keyvisual-mobile.jpg');" role="presentation"></span>
 			<svg viewBox="0 0 512 512">
 				<use xlink:href="./symbol/icons.svg#keyvisual-marks"></use>
 			</svg>
@@ -112,8 +117,8 @@
 				<h1>Seit über 25 Jahren<br> drucken wir mit Engagement<br> und Leidenschaft</h1>
 				<h1>Seit über 25<br> Jahren drucken<br> wir mit Engagement<br> und Leidenschaft</h1>
 			</div>
-			<video class="uk-position-cover uk-width-1-1 uk-position-z-index" src="./img/brb_druck_start_video.mp4" loop
-				muted playsinline data-uk-video="autoplay: inview"></video>
+			<!-- <video class="uk-position-cover uk-width-1-1 uk-position-z-index" src="./img/bmb_druck_start_video.mp4" loop
+				muted playsinline data-uk-video="autoplay: inview"></video> -->
 		</section>
 
 		<section class="intro-section">
@@ -1162,8 +1167,6 @@
 					data-uk-scrollspy="target: > div;cls: uk-animation-fade; delay: 120">
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu BMW"></a>
 							<div>
 								<img src="./img/references_bmw.jpg" loading="lazy" width="309" height="174"
 									alt="BMW logo">
@@ -1172,8 +1175,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu brand.new day "></a>
 							<div>
 								<img src="./img/references_bnd.jpg" loading="lazy" width="309" height="174"
 									alt="brand.new day logo">
@@ -1182,8 +1183,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu citroën"></a>
 							<div>
 								<img src="./img/references_citroen.jpg" loading="lazy" width="309" height="174"
 									alt="citroën logo">
@@ -1192,8 +1191,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu clasen"></a>
 							<div>
 								<img src="./img/references_clasen.jpg" loading="lazy" width="309" height="174"
 									alt="clasen logo">
@@ -1202,8 +1199,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu clasquin"></a>
 							<div>
 								<img src="./img/references_clasquin.jpg" loading="lazy" width="309" height="174"
 									alt="clasquin logo">
@@ -1212,8 +1207,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu daab"></a>
 							<div>
 								<img src="./img/references_daab.jpg" loading="lazy" width="309" height="174"
 									alt="daab logo">
@@ -1222,8 +1215,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu dänisches bettenlager"></a>
 							<div>
 								<img src="./img/references_dbl.jpg" loading="lazy" width="309" height="174"
 									alt="dänisches bettenlager logo">
@@ -1232,8 +1223,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu designer outlet"></a>
 							<div>
 								<img src="./img/references_designer_outlet.jpg" loading="lazy" width="309" height="174"
 									alt="designer outlet logo">
@@ -1242,8 +1231,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu deutsche post"></a>
 							<div>
 								<img src="./img/references_dpag.jpg" loading="lazy" width="309" height="174"
 									alt="deutsche post logo">
@@ -1252,8 +1239,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu dpd"></a>
 							<div>
 								<img src="./img/references_dpd.jpg" loading="lazy" width="309" height="174"
 									alt="dpd logo">
@@ -1262,8 +1247,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu druckpartner"></a>
 							<div>
 								<img src="./img/references_druckpartner.jpg" loading="lazy" width="309" height="174"
 									alt="druckpartner logo">
@@ -1272,8 +1255,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu dialog-team fienhold"></a>
 							<div>
 								<img src="./img/references_dtf.jpg" loading="lazy" width="309" height="174"
 									alt="dialog-team fienhold logo">
@@ -1282,8 +1263,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu fan factory"></a>
 							<div>
 								<img src="./img/references_ff.jpg" loading="lazy" width="309" height="174"
 									alt="fan factory logo">
@@ -1292,8 +1271,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu forsa"></a>
 							<div>
 								<img src="./img/references_forsa.jpg" loading="lazy" width="309" height="174"
 									alt="forsa logo">
@@ -1302,8 +1279,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu grow"></a>
 							<div>
 								<img src="./img/references_grow.jpg" loading="lazy" width="309" height="174"
 									alt="grow logo">
@@ -1312,8 +1287,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu here maps for life"></a>
 							<div>
 								<img src="./img/references_here.jpg" loading="lazy" width="309" height="174"
 									alt="here maps for life logo">
@@ -1322,8 +1295,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu kia"></a>
 							<div>
 								<img src="./img/references_kia.jpg" loading="lazy" width="309" height="174"
 									alt="kia logo">
@@ -1332,8 +1303,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu mercedes benz"></a>
 							<div>
 								<img src="./img/references_mercedes_benz.jpg" loading="lazy" width="309" height="174"
 									alt="mercedes benz logo">
@@ -1342,8 +1311,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu mini"></a>
 							<div>
 								<img src="./img/references_mini.jpg" loading="lazy" width="309" height="174"
 									alt="mini logo">
@@ -1352,8 +1319,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu navteq maps"></a>
 							<div>
 								<img src="./img/references_navteq.jpg" loading="lazy" width="309" height="174"
 									alt="navteq maps logo">
@@ -1362,8 +1327,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu der ministerpräsident des landes nordhein-westfalen"></a>
 							<div>
 								<img src="./img/references_nissan.jpg" loading="lazy" width="309" height="174"
 									alt="nissan logo">
@@ -1372,8 +1335,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu..."></a>
 							<div>
 								<img src="./img/references_nrw.jpg" loading="lazy" width="309" height="174"
 									alt="der ministerpräsident des landes nordhein-westfalen logo">
@@ -1382,8 +1343,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu peugeot"></a>
 							<div>
 								<img src="./img/references_peugeot.jpg" loading="lazy" width="309" height="174"
 									alt="peugeot logo">
@@ -1392,8 +1351,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu pure marketing & söhne"></a>
 							<div>
 								<img src="./img/references_pure.jpg" loading="lazy" width="309" height="174"
 									alt="pure marketing & söhne logo">
@@ -1402,8 +1359,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu ratioline"></a>
 							<div>
 								<img src="./img/references_ratioline.jpg" loading="lazy" width="309" height="174"
 									alt="ratioline logo">
@@ -1412,8 +1367,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu rheinbahn"></a>
 							<div>
 								<img src="./img/references_rheinbahn.jpg" loading="lazy" width="309" height="174"
 									alt="rheinbahn logo">
@@ -1422,8 +1375,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu sopexa deutschland"></a>
 							<div>
 								<img src="./img/references_sopexa.jpg" loading="lazy" width="309" height="174"
 									alt="sopexa deutschland logo">
@@ -1432,8 +1383,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu stadtwerke düsseldorf"></a>
 							<div>
 								<img src="./img/references_stadtwerke_dssd.jpg" loading="lazy" width="309" height="174"
 									alt="stadtwerke düsseldorf logo">
@@ -1442,8 +1391,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu targo bank"></a>
 							<div>
 								<img src="./img/references_targobank.jpg" loading="lazy" width="309" height="174"
 									alt="targo bank logo">
@@ -1452,8 +1399,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu vanacken"></a>
 							<div>
 								<img src="./img/references_van_acken_druck.jpg" loading="lazy" width="309" height="174"
 									alt="vanacken druckerei & verlag logo">
@@ -1462,8 +1407,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu vanacken"></a>
 							<div>
 								<img src="./img/references_van_acken_fundraising.jpg" loading="lazy" width="309"
 									height="174" alt="vanacken fundraising logo">
@@ -1472,8 +1415,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu volvo"></a>
 							<div>
 								<img src="./img/references_volvo.jpg" loading="lazy" width="309" height="174"
 									alt="volvo">
@@ -1482,8 +1423,6 @@
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
-							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
-								aria-label="Gehe zu volkswagen"></a>
 							<div>
 								<img src="./img/references_vw.jpg" loading="lazy" width="309" height="174"
 									alt="volkswagen logo">
@@ -1561,7 +1500,7 @@
 
 	<script src="js/uikit.min.js"></script>
 	<script src="js/svgxuse.min.js"></script>
-	<!-- <script src='js/theme.js'></script> -->
+	<script src='js/theme.js'></script>
 </body>
 
 </html>
