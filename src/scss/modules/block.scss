@@ -1,0 +1,146 @@
+.brb-block {
+    padding: 57px 0;
+
+    &.bg-blue-mid {
+        padding: 36px 0 40px;
+    }
+
+    &.info,
+    &.daten {
+        padding-bottom: 0;
+    }
+
+    &.impressum-contact {
+        padding: 103px 0 40px;
+    }
+
+    &.daten {
+        padding-top: 100px;
+
+        ul,
+        a,
+        p {
+            margin-bottom: 25px;
+        }
+
+        p,
+        li {
+            &.uk-text-bold {
+                font-size: 18px;
+                line-height: 25px;
+                margin-bottom: 0;
+            }
+
+            a {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    * {
+        color: $black;
+    }
+
+    .uk-container {
+        padding-left: 25px;
+        padding-right: 25px;
+        max-width: 1024px;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    p,
+    a,
+    li {
+        font-size: 18px;
+        line-height: 25px;
+
+        &:not(.uk-text-bold) {
+            margin-top: 0;
+            font-weight: $light;
+        }
+
+        &.uk-text-bold {
+            font-size: 16px;
+            line-height: 25px;
+            margin-bottom: 0;
+        }
+    }
+
+    p,
+    li {
+        a {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (min-width: $breakpointMobile) {
+        padding: 100px 0;
+
+        &.impressum-contact {
+            padding: 100px 0;
+        }
+
+        &.info {
+            padding-bottom: 85px;
+        }
+
+        &.bg-blue-mid {
+            padding: 100px 0;
+        }
+
+        &.daten {
+            padding: 100px 0 200px;
+
+            ul,
+            a,
+            p {
+                margin-bottom: 40px;
+            }
+
+            p,
+            li {
+                &.uk-text-bold {
+                    font-size: 20px;
+                    line-height: 35px;
+                    margin-bottom: 0;
+                }
+
+                a {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .uk-container {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        p,
+        a,
+        li {
+            font-size: 20px;
+            line-height: 35px;
+
+            &.uk-text-bold {
+                line-height: 35px;
+            }
+        }
+
+        p,
+        li {
+            a {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media (min-width: $breakpointLarge) {
+        .uk-container-small {
+            padding-left: 230px;
+        }
+    }
+}

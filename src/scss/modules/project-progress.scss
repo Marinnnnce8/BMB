@@ -1,0 +1,220 @@
+.project-progress {
+    padding: 55px 0;
+    max-width: 1190px;
+
+    .uk-card {
+        width: 124px;
+
+        img {
+            width: 124px;
+        }
+    }
+
+    .uk-card-body {
+        max-width: 100%;
+    }
+
+    .uk-card-media-top {
+        margin-bottom: 25px;
+    }
+
+    .uk-card-title {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $black;
+    }
+
+    .arrow {
+        color: $white;
+        fill: $white;
+        width: 44px;
+        height: 44px;
+        position: absolute;
+        top: 110px;
+
+        &.down {
+            left: 156px;
+            transform: rotate(30deg);
+        }
+
+        &.green {
+            color: $green;
+            fill: $green;
+        }
+    }
+
+    @media (min-width: $breakpointTabletPortrait) {
+        .arrow {
+            left: 50%;
+            width: 75px;
+            height: 75px;
+            top: -30px;
+            transform: translateX(-50%);
+
+            &.down {
+                top: 80px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .uk-card-media-top .arrow {
+            display: none;
+        }
+    }
+
+    @media (min-width: $breakpointMedium) {
+        .uk-card {
+            width: 150px;
+
+            img {
+                width: 150px;
+            }
+        }
+
+        .arrow {
+            top: 0;
+        }
+
+        .uk-card-media-top {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (min-width: $breakpointLarge) {
+
+        .uk-grid-column-large,
+        .uk-grid-large {
+            margin-left: -110px;
+
+            >* {
+                padding-left: 110px;
+            }
+        }
+
+        *+.uk-grid-margin-large,
+        .uk-grid+.uk-grid-large,
+        .uk-grid+.uk-grid-row-large,
+        .uk-grid-large>.uk-grid-margin,
+        .uk-grid-row-large>.uk-grid-margin {
+            margin-top: 110px;
+        }
+    }
+
+    @media (max-width: $breakpointTabletPortraitMax) {
+
+        .uk-card {
+            width: 100%;
+            flex-direction: row;
+        }
+
+        .uk-card-media-top {
+            width: 150px;
+            margin: 0 22px 0 0;
+        }
+
+        .uk-card-title {
+            text-align: left;
+            max-width: 156px;
+        }
+
+        .arrow {
+            &:not(.down) {
+                left: auto;
+                right: 100%;
+                transform: rotate(-215deg);
+            }
+        }
+    }
+
+    @media (max-width: $breakpointMobileMax) {
+        .uk-container {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .uk-card-media-top {
+            width: 110px;
+            margin: 0 25px 0 0;
+        }
+
+        .uk-card-title {
+            font-size: 13px;
+            line-height: 15px;
+            max-width: 120px;
+        }
+
+        .arrow {
+            width: 33px;
+            height: 33px;
+            top: 85px;
+
+            &.down {
+                left: 113px;
+                transform: rotate(30deg);
+            }
+        }
+    }
+
+    @media (max-width: $breakpointMobile) {
+        .arrow {
+            top: 72px;
+        }
+    }
+}
+
+.progress-inner {
+    @media (max-width: $breakpointTabletPortraitMax) {
+        padding-left: 85px;
+        flex-direction: column;
+
+        .progress-box {
+            display: flex;
+            justify-content: flex-start;
+
+            &:nth-of-type(3),
+            &:nth-of-type(7) {
+                padding-left: 182px;
+
+            }
+        }
+    }
+
+    @media (max-width: $breakpointMobileMax) {
+        padding-left: 0;
+
+        .progress-box {
+
+            &:nth-of-type(3),
+            &:nth-of-type(7) {
+                padding-left: 135px;
+
+            }
+        }
+    }
+
+    @media (max-width: $breakpointMobile) {
+        .progress-box {
+
+            &:nth-of-type(3),
+            &:nth-of-type(7) {
+                padding-left: 60px;
+
+            }
+        }
+    }
+}
+
+.progress-arrow {
+    max-width: 110px;
+    display: inline-block;
+
+    @media (min-width: $breakpointTabletPortrait) {
+        height: 150px;
+    }
+
+    @media (max-width: $breakpointTabletPortraitMax) {
+        display: none;
+    }
+}

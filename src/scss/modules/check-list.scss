@@ -1,0 +1,119 @@
+.check-list {
+    .uk-grid {
+        margin-bottom: 60px;
+    }
+
+    h3 {
+        line-height: 27px;
+    }
+
+    ul {
+        margin-top: 15px;
+    }
+
+    li {
+        color: $black;
+
+        &:not(.alt) {
+            padding-left: 22px;
+        }
+
+        svg {
+            width: 13px;
+            height: 13px;
+            top: 7px;
+        }
+
+        &.alt {
+            display: inline-flex;
+            padding: 10px 12px 10px 19px;
+            background-color: $gray-file;
+
+            span {
+                font-size: 16px;
+                display: block;
+                line-height: 20px;
+            }
+        }
+    }
+
+    @media (min-width: $breakpointMobile) {
+        .uk-grid {
+            margin-bottom: 50px;
+        }
+    }
+
+    @media (min-width: $breakpointTabletPortrait) {
+        .uk-grid {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (min-width: $breakpointMedium) {
+        .uk-grid {
+            margin-bottom: 20px;
+        }
+
+        li {
+            &.alt {
+                padding: 10px 15px 10px 22px;
+            }
+        }
+    }
+
+    @media (min-width: $breakpointLarge) {
+        .uk-grid {
+            margin-bottom: 70px;
+        }
+    }
+
+    @media (max-width: $breakpointSmallMax) {
+        .uk-grid {
+            justify-content: space-between;
+        }
+
+        // sass-lint:disable class-name-format
+        .uk-child-width-1-4>* {
+            width: auto;
+            max-width: 50%;
+        }
+
+        // sass-lint:enable class-name-format
+
+        *+.uk-grid-margin,
+        .uk-grid+.uk-grid,
+        .uk-grid>.uk-grid-margin {
+            margin-top: 30px;
+        }
+    }
+
+    @media (min-width: $breakpointSmallMax) {
+
+        // sass-lint:disable class-name-format
+        .uk-child-width-1-4>* {
+            width: 25%;
+        }
+
+        // sass-lint:enable class-name-format
+    }
+
+    @media (max-width: $breakpointTabletPortraitMin) {
+        .uk-grid {
+            justify-content: center;
+        }
+
+        // sass-lint:disable class-name-format
+        .uk-child-width-1-4>* {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        // sass-lint:enable class-name-format
+
+        *+.uk-grid-margin,
+        .uk-grid+.uk-grid,
+        .uk-grid>.uk-grid-margin {
+            margin-top: 50px;
+        }
+    }
+}

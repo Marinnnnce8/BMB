@@ -1,0 +1,126 @@
+.teaser-section {
+    background-color: $blue-pastel;
+    padding: 70px 0 65px;
+
+    h2 {
+        @include visually-hidden;
+    }
+
+    // sass-lint:disable class-name-format
+    .uk-child-width-1-3\@s>* {
+        width: 100%;
+    }
+
+    // sass-lint:enable class-name-format
+
+    .uk-card {
+        background-color: $white;
+        border-radius: 5px;
+        padding: 30px 33px 42px;
+        min-height: 265px;
+        height: 100%;
+
+        &::before,
+        .uk-svg,
+        .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
+            transition: $timing $speed;
+        }
+
+        &::before {
+            position: absolute;
+            display: block;
+            content: '';
+            height: 13px;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            transition: $timing $speed;
+        }
+
+        .uk-svg,
+        .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
+            color: $gray-light;
+            fill: $gray-light;
+        }
+
+        @include hover {
+            &::before {
+                height: 25px;
+            }
+
+            .uk-svg,
+            .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
+                color: $gray-dark;
+                fill: $gray-dark;
+
+                * {
+                    fill: inherit;
+                }
+            }
+        }
+    }
+
+    .uk-card-title {
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: $light;
+        color: $gray;
+    }
+
+    @media (min-width: $breakpointLarge) {
+        .uk-grid {
+            margin-left: -30px;
+
+            >* {
+                padding-left: 30px;
+            }
+        }
+
+        *+.uk-grid-margin,
+        .uk-grid+.uk-grid,
+        .uk-grid>.uk-grid-margin {
+            margin-top: 30px;
+        }
+    }
+
+    @media (min-width: $breakpointMobile) {
+        padding: 40px 0 52px;
+    }
+
+    @media (min-width: $breakpointTabletPortraitMax) {
+        padding: 88px 0 83px;
+
+        // sass-lint:disable class-name-format
+        .uk-child-width-1-3\@s>* {
+            width: calc(100% * 1 / 3.001);
+        }
+
+        // sass-lint:enable class-name-format
+
+        .uk-card {
+            padding: 30px 15px 42px;
+        }
+    }
+
+    @media (min-width: $breakpointMedium) {
+        padding: 93px 0;
+
+        .uk-card {
+            padding: 30px 45px 42px;
+        }
+    }
+
+    @media (max-width: $breakpointTabletPortrait) {
+        .uk-card-title {
+            font-size: 28px;
+            line-height: 29px;
+        }
+    }
+
+    @media (max-width: $breakpointTabletPortraitMax) {
+        .uk-card-title {
+            font-size: 30px;
+            line-height: 35px;
+        }
+    }
+}

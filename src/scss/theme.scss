@@ -1,0 +1,81 @@
+//
+// Theme
+//
+
+@import '_variables.scss';
+@import '_mixins.scss';
+
+// Base
+@import './base/fonts.scss';
+@import './base/typography.scss';
+
+// Layout / Helpers
+@import './helpers/helpers.scss';
+@import './helpers/keyframes.scss';
+@import './layout/buttons.scss';
+
+// UIkit
+@import './uikit/breadcrumb.scss';
+@import './uikit/form.scss';
+@import './uikit/offcanvas.scss';
+
+// Modules
+@import './modules/block.scss';
+@import './modules/banner.scss';
+@import './modules/intro-section.scss';
+@import './modules/teaser-section.scss';
+@import './modules/check-list.scss';
+@import './modules/druck-section.scss';
+@import './modules/lettershop-section.scss';
+@import './modules/project-progress.scss';
+@import './modules/produkte-section.scss';
+@import './modules/about-section.scss';
+@import './modules/reference-section.scss';
+@import './modules/burger-menu.scss';
+@import './modules/cookies.scss';
+
+// Theme
+@import 'theme/base.scss';
+@import 'theme/header.scss';
+@import 'theme/footer.scss';
+@import 'theme/ie11.scss';
+@import 'theme/print.scss';
+
+
+// Template | Remove or Integrate
+
+// uikit/utility
+.uk-logo {
+	padding: 0;
+	min-height: 0;
+
+	img {
+		height: auto;
+		width: 100%;
+		max-width: 59px;
+	}
+}
+
+.uk-container {
+	max-width: 1280px;
+}
+
+.uk-container-small {
+	max-width: 598px;
+}
+
+@media (max-width: $breakpointSmallMax - 1) {
+	.uk-grid {
+		margin-left: -18px;
+
+		>* {
+			padding-left: 18px;
+		}
+	}
+
+	*+.uk-grid-margin,
+	.uk-grid+.uk-grid,
+	.uk-grid>.uk-grid-margin {
+		margin-top: 40px;
+	}
+}

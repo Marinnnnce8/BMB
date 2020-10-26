@@ -1,0 +1,151 @@
+//----------  button
+//------------------------------------------------------------------------------
+a,
+button {
+	appearance: none;
+	outline: none;
+	transition: $timing ease-in-out;
+}
+
+a {
+	@include hover {
+		text-decoration: none;
+	}
+}
+
+button,
+input[type='button'],
+input[type='submit'] {
+	background: none;
+	border: 0;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+}
+
+.uk-button {
+	align-items: center;
+	border: 0;
+	display: inline-flex;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: left;
+	text-transform: none;
+	transition: $speed $timing;
+	background-color: $blue;
+	color: $white;
+	font-weight: $bold;
+	padding: 10px 32px 11px 20px;
+
+	&.uk-button-text {
+		background-color: transparent;
+		font-weight: $light;
+		padding: 0;
+		color: $black;
+	}
+
+	svg {
+		width: 16px;
+		height: 16px;
+		margin-right: 15px;
+		color: $white;
+		fill: $white;
+		transition: $speed $timing;
+		position: relative;
+		left: 0;
+	}
+
+	@include hover {
+		background-color: $blue;
+		color: $black;
+
+		&.uk-button-text {
+			background-color: transparent;
+		}
+
+		&:not(.button-scroll) {
+
+			svg {
+				transform: translateX(5px);
+			}
+		}
+	}
+}
+
+.uk-button-secondary {
+	background-color: $white;
+	color: $gray;
+
+	svg {
+		color: $blue;
+		fill: $blue;
+	}
+
+	@include hover {
+		background-color: $blue;
+		color: $black;
+
+		svg {
+			color: $white;
+			fill: $white;
+		}
+	}
+}
+
+.uk-button-default {
+	background-color: $pink;
+
+	&.yellow {
+		background-color: $yellow;
+		color: $black;
+
+		svg {
+			color: $black;
+			fill: $black;
+		}
+	}
+
+	@include hover {
+		background-color: $white;
+		color: $pink;
+
+		svg {
+			color: $pink;
+			fill: $pink;
+		}
+
+		&.yellow {
+			background-color: $gray-produkte;
+			color: $yellow;
+
+			svg {
+				color: $yellow;
+				fill: $yellow;
+			}
+		}
+	}
+}
+
+.button-scroll {
+	background-color: $gray;
+	border: 1px solid $white;
+	position: fixed;
+	bottom: 40px;
+	right: 22px;
+	width: 44px;
+	height: 44px;
+	padding: 0;
+	z-index: 2;
+
+	svg {
+		width: 19px;
+		height: 19px;
+		color: $white;
+		fill: $white;
+		margin: 0;
+	}
+
+	&.with-cookie {
+		bottom: 138px;
+	}
+}

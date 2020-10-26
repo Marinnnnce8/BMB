@@ -1,0 +1,30 @@
+.intro-section {
+    padding: 50px 0 100px;
+    text-align: left;
+
+    @media (min-width: $breakpointMedium) {
+        padding: 60px 0 40px;
+        text-align: center;
+    }
+}
+
+.intro-title {
+
+    h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    @media (min-width: $breakpointMedium) {
+        width: 75%;
+    }
+    @media (max-width: $breakpointMedium) {
+        align-items: flex-start;
+    }
+}
+
+.intro-text {
+    @media (min-width: $breakpointMedium) {
+        width: 70%;
+    }
+}

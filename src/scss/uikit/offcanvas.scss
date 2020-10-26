@@ -1,0 +1,30 @@
+.uk-offcanvas {
+    background-color: transparent;
+
+    li {
+        &:not(:last-of-type) {
+            border-bottom: 1px solid rgba($white, .3);
+        }
+    }
+
+    a {
+        color: $white;
+        font-size: 25px;
+        line-height: 60px;
+    }
+}
+
+.uk-offcanvas-bar {
+    background-color: $blue;
+    padding: 20px 40px;
+
+    ul {
+        width: 100%;
+    }
+
+    @media (min-width: $breakpointTabletPortrait) {
+        ul {
+            width: 70%;
+        }
+    }
+}

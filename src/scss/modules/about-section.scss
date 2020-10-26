@@ -1,0 +1,147 @@
+.about-section {
+    >.uk-background-cover {
+        display: block;
+        min-height: 209px;
+    }
+
+    @media (min-width: $breakpointTabletPortraitMax) {
+        >.uk-background-cover {
+            min-height: 312px;
+        }
+    }
+
+    @media (min-width: $breakpointMedium) {
+        >.uk-background-cover {
+            min-height: 458px;
+        }
+    }
+
+    @media (min-width: $breakpointLarge) {
+        >.uk-background-cover {
+            min-height: 600px;
+        }
+    }
+}
+
+.about-banner {
+    span {
+        display: block;
+        min-height: 312px;
+
+        &:last-of-type {
+            display: none;
+        }
+    }
+
+    @media (min-width: $breakpointTabletPortraitMax) {
+        span {
+            min-height: 382px;
+        }
+    }
+
+    @media (max-width: $breakpointTabletPortraitMin) {
+        span {
+
+            &:first-of-type {
+                display: none;
+            }
+
+            &:last-of-type {
+                display: block;
+            }
+        }
+    }
+}
+
+.about-content {
+
+    .uk-background-cover {
+        max-width: 257px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        display: none;
+    }
+
+    @media (min-width: $breakpointLarge) {
+        padding-right: 257px;
+
+        .uk-background-cover {
+            display: block;
+        }
+    }
+}
+
+.about-text {
+    background-color: $blue-mid;
+    padding: 33px 25px 55px;
+    text-align: left;
+
+    blockquote {
+        padding-top: 30px;
+
+        h2 {
+            color: $black;
+            margin-top: 58px;
+        }
+    }
+
+    p {
+        margin-top: 0;
+    }
+
+    svg {
+        width: 112px;
+        height: 112px;
+    }
+
+    @media (min-width: $breakpointMobile) {
+        padding: 37px 28px 25px;
+        text-align: center;
+
+        h2 {
+            margin: 57px 0 15px;
+        }
+    }
+
+    @media (min-width: $breakpointTabletPortrait) {
+        padding: 20px 28px 40px;
+    }
+
+    @media (min-width: $breakpointMedium) {
+        padding: 33px 85px 50px;
+    }
+
+    @media (max-width: $breakpointLarge) and (min-width: $breakpointSmallMax) {
+        text-align: left;
+    }
+
+    @media (min-width: $breakpointLarge) {
+        padding: 50px 88px 50px 50px;
+
+        h2 {
+            margin: 55px 0 25px;
+        }
+
+        svg {
+            width: 95px;
+            height: 95px;
+        }
+    }
+}
+
+.about-wrap {
+    @media (min-width: $breakpointTabletPortrait) {
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: $breakpointTabletPortraitMax) {
+        flex-direction: column;
+
+        .uk-width-1-2 {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@media print {
+
+	*,
+	::after,
+	::before {
+		background: 0 0 !important;
+		color: $black !important;
+		fill: $black !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	.uk-container {
+		max-width: 90% !important;
+		width: 100% !important;
+	}
+
+	img {
+		max-width: 300px !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		display: block !important;
+	}
+
+	.header,
+	.footer,
+	.uk-button,
+	.uk-breadcrumb,
+	.uk-pagination,
+	.uk-modal,
+	.banner {
+		display: none !important;
+	}
+}

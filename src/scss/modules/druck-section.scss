@@ -1,0 +1,260 @@
+.druck-top {
+    padding: 75px 0 89px;
+
+    @media (min-width: $breakpointMobile) {
+        text-align: center;
+    }
+
+    @media (min-width: $breakpointTabletPortrait) {
+        padding: 75px 0 82px;
+    }
+
+    @media (min-width: $breakpointMedium) {
+        padding: 95px 0;
+    }
+
+    @media (min-width: $breakpointLarge) {
+        padding: 90px 0 100px;
+    }
+}
+
+.druck-title,
+.druck-text {
+    max-width: 851px;
+    width: 100%;
+}
+
+.druck-title h2 {
+    margin-bottom: 30px;
+    color: $white;
+
+    @media (min-width: $breakpointMobile) {
+        margin-bottom: 45px;
+    }
+}
+
+.druck-text {
+    p {
+        color: $white;
+    }
+
+    .uk-button {
+        margin-top: 25px;
+
+        @include hover {
+            background-color: $white;
+
+            svg {
+                color: $blue;
+                fill: $blue;
+            }
+        }
+    }
+}
+
+.druck-middle {
+    padding: 131px 0 25px;
+
+    >svg {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 5px;
+        color: $blue-light;
+        fill: $blue-light;
+        width: 277px;
+        height: auto;
+    }
+
+    h2 {
+        margin-bottom: 139px;
+        max-width: 415px;
+    }
+
+    .uk-button {
+        z-index: 1;
+    }
+
+    @media (min-width: $breakpointMobile) {
+        padding: 144px 0 25px;
+
+        h2 {
+            margin-bottom: 85px;
+        }
+    }
+
+    @media (min-width: $breakpointTabletPortrait) {
+        padding: 154px 0 25px;
+
+        h2 {
+            margin-bottom: 75px;
+        }
+    }
+
+    @media (min-width: $breakpointLarge) {
+        padding: 165px 0 50px;
+
+        h2 {
+            margin-bottom: 85px;
+        }
+    }
+
+    @media (max-width: $breakpointTabletPortraitMax) {
+        .uk-container {
+
+            &:nth-of-type(2) {
+                padding-left: 115px;
+                padding-right: 115px;
+            }
+        }
+    }
+
+    @media (max-width: $breakpointMobile) {
+        .uk-container {
+
+            &:nth-of-type(2) {
+                padding-left: 85px;
+                padding-right: 30px;
+            }
+        }
+    }
+}
+
+.druck-bottom {
+    padding: 60px 0 47px;
+
+    h2 {
+        margin-bottom: 27px;
+        line-height: 60px;
+    }
+
+    p {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: $light;
+    }
+
+    .uk-card-body {
+        padding-top: 22px;
+    }
+
+    .uk-card-media-top {
+        min-height: 364px;
+
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            content: '';
+            border-bottom: 19px solid $blue;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (min-width: $breakpointMobile) {
+        padding: 35px 0 60px;
+
+        h2 {
+            margin-bottom: 47px;
+        }
+    }
+
+    @media (min-width: $breakpointTabletPortrait) {
+        padding: 25px 0 70px;
+
+        h2 {
+            margin-bottom: 37px;
+        }
+
+        .uk-card-media-top {
+            min-height: 300px;
+        }
+    }
+
+    @media (min-width: $breakpointMedium) {
+        padding: 25px 0 125px;
+
+        .uk-card-media-top {
+            min-height: 416px;
+        }
+    }
+
+    @media (min-width: $breakpointLarge) {
+        padding: 48px 0 125px;
+
+        p {
+            margin-top: 15px;
+        }
+    }
+
+    @media (min-width: $breakpointTabletPortrait) and (max-width: $breakpointSmallMax) {
+        .uk-card-title {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+
+    @media (min-width: $breakpointSmall) and (max-width: $breakpointTabletPortrait) {
+
+        .uk-card {
+            display: flex;
+        }
+
+        .uk-card-media-top {
+            max-width: 256px;
+            margin-right: 15px;
+            width: 100%;
+            min-height: 0;
+        }
+
+        *+.uk-grid-margin,
+        .uk-grid+.uk-grid,
+        .uk-grid>.uk-grid-margin {
+            margin-top: 30px;
+        }
+
+        .uk-card-body {
+            padding-top: 0;
+            width: calc(100% - 256px);
+        }
+    }
+
+    @media (max-width: $breakpointTabletPortrait) {
+        .uk-container {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        // sass-lint:disable class-name-format
+        .uk-child-width-1-3>* {
+            width: 100%;
+        }
+
+        // sass-lint:enable class-name-format
+
+        *+.uk-grid-margin,
+        .uk-grid+.uk-grid,
+        .uk-grid>.uk-grid-margin {
+            margin-top: 40px;
+        }
+
+        .uk-card-body {
+            padding-top: 15px;
+        }
+
+        .uk-card-title {
+            font-size: 22px;
+        }
+    }
+
+    @media (max-width: $breakpointMobile) {
+        h2 {
+            font-size: 32px;
+        }
+    }
+}

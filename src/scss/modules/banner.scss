@@ -1,0 +1,149 @@
+//----------  banner
+//------------------------------------------------------------------------------
+.banner {
+
+	>svg {
+		color: $white;
+		fill: $white;
+	}
+
+	&:not(.internal) {
+		height: 0;
+		padding-bottom: 44%;
+
+		video {
+			max-height: 100vh;
+		}
+
+		>svg {
+			width: 305px;
+			height: 305px;
+			fill: $white;
+			position: absolute;
+			left: -70px;
+			bottom: 18px;
+			z-index: 14;
+		}
+
+		.banner-inner {
+			padding: 0 0 65px 65px;
+		}
+
+		h1 {
+			&:last-of-type {
+				display: none;
+			}
+		}
+	}
+
+	&.internal {
+
+		.banner-inner {
+			padding: 0;
+			min-height: 338px;
+		}
+
+		h1 {
+			background-color: transparent;
+			font-size: 50px;
+			line-height: 60px;
+			margin-top: 5px;
+			font-weight: $bold;
+		}
+
+		>svg {
+			width: 272px;
+			height: 272px;
+			opacity: .7;
+			top: 60%;
+			left: 50.2%;
+		}
+	}
+
+	@media (min-width: $breakpointTabletPortraitMax) {
+
+		&.internal {
+			padding: 0 25px;
+
+			h1 {
+				font-size: 90px;
+				font-weight: $light;
+				margin-top: 0;
+			}
+
+			>svg {
+				width: 448px;
+				height: 448px;
+				top: 63%;
+				left: 54.2%;
+			}
+		}
+	}
+
+	@media (min-width: $breakpointTabletPortrait) {
+		&:not(.internal) {
+
+			>svg {
+				width: 305px;
+				height: 305px;
+				left: 66px;
+				bottom: 183px;
+			}
+
+			.banner-inner {
+				padding: 0 0 110px 190px;
+			}
+		}
+	}
+
+	@media (min-width: $breakpointMedium) {
+		&:not(.internal) {
+
+			>svg {
+				width: 395px;
+				height: 395px;
+				left: 15px;
+				bottom: 206px;
+			}
+
+			.banner-inner {
+				padding: 0 0 113px 219px;
+			}
+		}
+	}
+
+	@media (min-width: $breakpointLarge) {
+		&:not(.internal) {
+
+			>svg {
+				width: 440px;
+				height: 440px;
+				left: 42px;
+				bottom: 300px;
+			}
+
+			.banner-inner {
+				padding: 0 0 210px 260px;
+			}
+		}
+	}
+
+	@media (max-width: $breakpointTabletPortrait) {
+		&:not(.internal) {
+			h1 {
+				&:first-of-type {
+					display: none;
+				}
+
+				&:last-of-type {
+					display: inline;
+				}
+			}
+		}
+	}
+}
+
+.banner-inner {
+	// padding: 0 0 210px 240px;
+	z-index: 14;
+}

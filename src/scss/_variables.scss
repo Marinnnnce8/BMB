@@ -1,0 +1,104 @@
+//----------  variables
+//------------------------------------------------------------------------------
+
+$font-default: 'Roboto',
+sans-serif;
+$bold: 700;
+$black-weight: 800;
+$semi-bold: 600;
+$medium: 500;
+$light: 300;
+$thin: 100;
+$italic: italic;
+
+// Colors
+$white: #fff;
+$black: #000;
+$gray: #656565;
+$gray-dark: #696969;
+$gray-produkte: #969696;
+$gray-light: #c0c9cf;
+$gray-alt: #ededed;
+$gray-file: #eaeaea;
+$blue: #00b0eb;
+$blue-light: #b3e7f9;
+$blue-pastel: #c4d8e6;
+$blue-mid: #c3d8e6;
+$green: #4c8c8c;
+$pink: #ea5197;
+$yellow: #ffef42;
+
+
+$site-colors: ('black': $black,
+	'white': $white,
+	'blue': $blue,
+	'pink': $pink,
+	'gray': $gray,
+	'gray-alt': $gray-alt,
+	'blue-mid': $blue-mid,
+	'yellow': $yellow) !default;
+
+//----------  Bootstrap grid
+//------------------------------------------------------------------------------
+
+$enable-grid-classes: true !default;
+
+//----------  Media queries breakpoints - Grid breakpoint
+//------------------------------------------------------------------------------
+
+$grid-breakpoints: (xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px) !default;
+
+//----------  Grid containers
+//------------------------------------------------------------------------------
+
+$container-max-widths: (sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px) !default;
+
+//----------  Grid columns
+//------------------------------------------------------------------------------
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+//
+// UIkit
+//
+
+// Breakpoints
+$breakpointSmall: 640px;
+$breakpointTabletPortrait: 769px;
+$breakpointTabletPortraitMax: ($breakpointTabletPortrait - 1);
+$breakpointTabletPortraitMin: ($breakpointTabletPortraitMax - 1);
+$breakpointMedium: 1025px;
+$breakpointLarge: 1441px;
+$breakpointXlarge: 1600px;
+$breakpointXmedium: 1366px;
+$breakpointXmediumMin: ($breakpointXmedium - 1);
+$breakpointXsmallMax: ($breakpointSmall - 1);
+$breakpointSmallMax: ($breakpointMedium - 1);
+$breakpointMediumMax: ($breakpointLarge - 1);
+$breakpointLargeMax: ($breakpointXlarge - 1);
+$breakpointMobileMax: 640px;
+$breakpointMobile: 415px;
+$breakpointMobileMin: 375px;
+
+// Spacing
+$ukGutter: 15px;
+
+$speed: 256ms;
+$timing: ease-in-out;
+$duration: .2s;
+$distance: 8px;
+$easeOutBack: cubic-bezier(.175, .885, .320, 1.275);
+
+//
+// Theme
+//
+
+$themeVar: 0; // Example, not used

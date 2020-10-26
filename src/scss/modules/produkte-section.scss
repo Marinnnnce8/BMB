@@ -1,0 +1,279 @@
+.produkte-section {
+    border-top: 37px solid $yellow;
+
+    @media (max-width: $breakpointTabletPortraitMax) {
+        .uk-container {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+}
+
+.produkte-intro {
+    padding: 167px 0 0;
+
+    .uk-svg,
+    .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
+        width: 903px;
+        height: 500px;
+        color: $gray-light;
+        fill: $gray-light;
+        top: -120px;
+    }
+
+    h2 {
+        line-height: 60px;
+        color: $black;
+    }
+
+    @media (min-width: $breakpointMobile) {
+        padding: 230px 0 0;
+
+        .uk-svg,
+        .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
+            top: -60px;
+        }
+    }
+
+    @media (min-width: $breakpointMedium) {
+        padding: 230px 0 25px;
+    }
+}
+
+.produkte-intro-text {
+    max-width: 1064px;
+    padding-top: 15px;
+
+    p:last-of-type {
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: $breakpointTabletPortrait) {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    @media (min-width: $breakpointMedium) {
+        padding-top: 0;
+
+        p:last-of-type {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.produkte-progress {
+    padding-bottom: 80px;
+
+    @media (min-width: $breakpointMobile) {
+        padding-bottom: 85px;
+    }
+
+    @media (min-width: $breakpointTabletPortrait) {
+        padding-bottom: 106px;
+    }
+
+    @media (min-width: $breakpointMedium) {
+        padding-bottom: 147px;
+    }
+
+    @media (min-width: $breakpointLarge) {
+        padding-bottom: 100px;
+    }
+
+    @media (max-width: $breakpointTabletPortraitMin) {
+        .project-progress {
+            padding-top: 35px;
+        }
+    }
+}
+
+.produkte-bottom {
+    padding-bottom: 80px;
+
+    .uk-card-media-top {
+        min-height: 283px;
+    }
+
+    .uk-card-body {
+        padding-top: 15px;
+    }
+
+    h3 {
+        color: $black;
+    }
+
+    h4 {
+        line-height: 25px;
+    }
+
+    p {
+        color: $black;
+    }
+
+    .uk-text-light b {
+        font-weight: $bold;
+    }
+
+    .text .info {
+        display: none;
+    }
+
+    svg {
+        width: 85px;
+        height: 85px;
+        margin-right: 13px;
+    }
+
+    @media (min-width: $breakpointMobile) {
+        padding-bottom: 67px;
+    }
+
+    @media (min-width: $breakpointTabletPortrait) {
+        padding-bottom: 105px;
+
+        .uk-card-body {
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 0;
+        }
+
+        .uk-card-media-top {
+            min-height: 356px;
+        }
+
+        svg {
+            width: 95px;
+            height: 95px;
+            margin-right: 20px;
+        }
+    }
+
+    @media (min-width: $breakpointMedium) {
+        padding-bottom: 120px;
+
+        .uk-card-media-top {
+            min-height: 491px;
+        }
+
+        svg {
+            margin-right: 15px;
+        }
+    }
+
+    @media (min-width: $breakpointLarge) {
+        padding-bottom: 167px;
+
+        svg {
+            margin-right: 25px;
+        }
+    }
+
+    @media (max-width: $breakpointLarge) {
+        .text {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: $breakpointLarge) and (min-width: $breakpointMedium) {
+        .text {
+
+            h4 {
+                max-width: 39%;
+            }
+
+            p {
+                max-width: 70%;
+            }
+        }
+    }
+
+    @media (max-width: $breakpointMedium) {
+        .uk-container {
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+    }
+
+    @media (max-width: $breakpointMedium) and (min-width: $breakpointTabletPortrait) {
+
+        h3 {
+            font-size: 19px;
+            line-height: 24px;
+        }
+
+        .text {
+
+            h4 {
+                max-width: 59%;
+            }
+
+            p {
+                max-width: 66%;
+            }
+        }
+    }
+
+    @media (max-width: $breakpointLarge) and (min-width: $breakpointTabletPortrait) {
+        .text .info {
+            display: block;
+        }
+    }
+
+    @media (max-width: $breakpointTabletPortraitMax) and (min-width: $breakpointMobile) {
+
+        *+.uk-grid-margin,
+        .uk-grid+.uk-grid,
+        .uk-grid>.uk-grid-margin {
+            margin-top: 20px;
+        }
+
+        .uk-card {
+            display: flex;
+        }
+
+        .uk-card-media-top,
+        .uk-card-body {
+            width: 50%;
+        }
+
+        .uk-card-media-top {
+            min-height: 270px;
+        }
+
+        .uk-card-body {
+            padding-left: 15px;
+            padding-top: 0;
+        }
+
+        .text {
+            padding-right: 17px;
+        }
+    }
+
+    @media (max-width: $breakpointTabletPortraitMax) {
+        .uk-container {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .uk-child-width-1-2>* {
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 19px;
+            line-height: 25px;
+        }
+    }
+
+    @media (max-width: $breakpointMobile) {
+        padding-bottom: 65px;
+
+        .uk-card-body {
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 15px;
+        }
+    }
+}

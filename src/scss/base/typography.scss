@@ -1,0 +1,114 @@
+//----------  typography
+//------------------------------------------------------------------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-default;
+	font-weight: $light;
+}
+
+h1 {
+	background: $blue 0% 0% no-repeat padding-box;
+	font-size: 40px;
+	line-height: 1.25;
+	display: inline;
+	color: $white;
+
+	@media (min-width: $breakpointTabletPortrait) {
+		font-size: 48px;
+		line-height: 1.3;
+	}
+
+	@media (min-width: $breakpointMedium) {
+		font-size: 60px;
+	}
+}
+
+h2 {
+	font-size: 40px;
+	line-height: 50px;
+	font-weight: $light;
+}
+
+h3,
+.uk-card-title {
+	font-size: 25px;
+	margin-bottom: 15px;
+	font-weight: $black-weight;
+	line-height: 30px;
+}
+
+h4 {
+	font-size: 18px;
+	font-weight: $medium;
+	color: $black;
+}
+
+p {
+	font-size: 18px;
+	line-height: 25px;
+
+	&:not(.uk-text-light) {
+		color: $black;
+	}
+}
+
+.uk-text-small {
+	font-size: 15px;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	li {
+		font-weight: $light;
+		font-size: 20px;
+		line-height: 27px;
+		list-style-type: none;
+	}
+
+	&.alt {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	@media (max-width: $breakpointSmallMax) and (min-width: $breakpointTabletPortrait) {
+		li {
+			font-size: 16px;
+		}
+	}
+}
+
+.uk-list-disc {
+	li {
+		position: relative;
+		padding-left: 10px;
+
+		&::before {
+			position: absolute;
+			left: 0;
+			top: 9px;
+			list-style-type: none;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background-color: $black;
+			margin: 0;
+		}
+	}
+
+	@media (min-width: $breakpointMobile) {
+		li::before {
+			top: 15px;
+		}
+	}
+}
+
+blockquote {
+	font-style: normal;
+}
