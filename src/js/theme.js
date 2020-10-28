@@ -10,6 +10,7 @@ var theme = {
 		var menuButton = document.getElementsByClassName('js-burger')[0];
 		var scrollLink = document.querySelectorAll('.js-scroll');
 		var cookieButton = document.getElementsByClassName('js-cookies')[0];
+		var buttonScrollTo = document.getElementsByClassName('button-scroll')[0];
 
 		if(cookieButton) {
 			window.addEventListener('resize', this.setBodyPaddingBottom);
@@ -29,6 +30,10 @@ var theme = {
 
 		if(cookieButton) {
 			cookieButton.addEventListener('click', this.acceptTerms);
+		}
+
+		if(buttonScrollTo) {
+			window.addEventListener('scroll', this.slideButtonInView);
 		}
 	},
 
@@ -125,6 +130,12 @@ var theme = {
 		setTimeout(function () {
 			cookieBanner.style.display = 'none';
 		}, 600);
+	},
+
+	slideButtonInView: function() {
+		var buttonScrollTo = document.getElementsByClassName('button-scroll')[0];
+
+		buttonScrollTo.classList.add('scroll-view');
 	}
 
 };

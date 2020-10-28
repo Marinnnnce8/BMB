@@ -140,10 +140,16 @@ input[type='submit'] {
 	position: fixed;
 	bottom: 30px;
 	right: 22px;
+	transform: translateX(calc(100% + 22px));
 	width: 44px;
 	height: 44px;
 	padding: 0;
 	z-index: 2;
+
+	&.scroll-view {
+		transform: translate(0);
+		transition: transform .5s;
+	}
 
 	svg {
 		width: 19px;
