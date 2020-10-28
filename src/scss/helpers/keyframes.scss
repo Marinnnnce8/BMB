@@ -4,13 +4,13 @@
     }
 
     100% {
-        transform: translateX(0%);
+        transform: translateX(0);
     }
 }
 
 @keyframes slideOut {
     0% {
-        transform: translateX(0%);
+        transform: translateX(0);
     }
 
     100% {
@@ -24,13 +24,13 @@
     }
 
     100% {
-        transform: translateX(0%);
+        transform: translateX(0);
     }
 }
 
 @keyframes slideOutLink {
     0% {
-        transform: translateX(0%);
+        transform: translateX(0);
     }
 
     90% {
