@@ -68,8 +68,8 @@ $iconLineGap: 5px;
         display: none;
     }
 
-    @media (min-width: $breakpointMobile) {
-        span:nth-child(2) {
+    @media (max-width: $breakpointMobile) {
+        >span span:nth-child(2) {
             transform: translate(-50%, -30%);
         }
     }

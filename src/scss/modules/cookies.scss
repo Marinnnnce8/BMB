@@ -6,7 +6,7 @@
     background-color: $gray;
     padding: 19px 25px 23px;
     z-index: 2;
-    display: none;
+    transition: $speed $timing;
 
     .uk-button {
         font-weight: 400;

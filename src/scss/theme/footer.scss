@@ -30,6 +30,9 @@
 
             &:not(.uk-text-bold):not(.uk-button) {
                 font-weight: $light;
+            }
+
+            &:not(.uk-text-bold):not(.uk-button):not(.mob) {
                 display: block;
             }
         }
@@ -56,6 +59,10 @@
 
             &.addresse span {
                 font-size: 18px;
+            }
+
+            &.phone .mob {
+                display: none;
             }
         }
     }
@@ -118,6 +125,14 @@
         .uk-grid+.uk-grid,
         .uk-grid>.uk-grid-margin {
             margin-top: 92px;
+        }
+    }
+
+    @media (max-width: $breakpointMobileM) {
+        div {
+            span:not(.uk-text-bold):not(.uk-button):not(.mob).desk {
+                display: none;
+            }
         }
     }
 }
