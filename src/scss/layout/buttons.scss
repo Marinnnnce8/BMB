@@ -42,6 +42,13 @@ input[type='submit'] {
 		font-weight: $light;
 		padding: 0;
 		color: $black;
+		display: inline;
+		box-shadow: inset 0 -1px transparent;
+		word-break: break-word;
+
+		&::before {
+			display: none;
+		}
 	}
 
 	svg {
@@ -61,6 +68,7 @@ input[type='submit'] {
 
 		&.uk-button-text {
 			background-color: transparent;
+			box-shadow: inset 0 -1px $black;
 		}
 
 		&:not(.button-scroll) {
