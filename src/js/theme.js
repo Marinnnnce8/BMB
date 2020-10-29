@@ -61,7 +61,7 @@ var theme = {
 
 	//check if terms accepted 
 	checkTerms: function() {
-		var cookieBanner = document.getElementsByClassName('terms')[0];
+		var cookieBanner = document.getElementsByClassName('cookies')[0];
 		var buttonScroll = document.getElementsByClassName('button-scroll')[0];
 		var buttonScrollBottomOffset = 40;
 		var cookieBannerHeight = cookieBanner.offsetHeight;
@@ -83,7 +83,7 @@ var theme = {
 
 	//adjust body padding bottom according to cookies banner height 
 	setBodyPaddingBottom: function() {
-		var cookieBanner = document.getElementsByClassName('terms')[0];
+		var cookieBanner = document.getElementsByClassName('cookies')[0];
 		var cookieBannerHeight = cookieBanner.offsetHeight;
 		var buttonScroll = document.getElementsByClassName('button-scroll')[0];
 		buttonScroll.style.bottom = 0;
@@ -101,7 +101,7 @@ var theme = {
 
 	//accept Terms and animation effect after accepting
 	acceptTerms: function() {
-		var cookieBanner = document.getElementsByClassName('terms')[0];
+		var cookieBanner = document.getElementsByClassName('cookies')[0];
 		var cookieBannerHeight = cookieBanner.offsetHeight;
 		var buttonScroll = document.getElementsByClassName('button-scroll')[0];
 		var buttonScrollBottomOffset = 40;
