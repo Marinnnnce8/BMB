@@ -16,7 +16,7 @@ var theme = {
 			window.addEventListener('resize', this.setBodyPaddingBottom);
 		}
 
-		this.checkCookie();
+		this.checkTerms();
 
 		if(menuButton) {
 			menuButton.addEventListener('click', this.toggleMenu);
@@ -37,8 +37,9 @@ var theme = {
 		}
 	},
 
+
+	//toggle responsive navigation
 	toggleMenu: function() {
-		var burgerButton = this;
 		var menu = document.getElementsByClassName('js-menu')[0];
 		var isHidden = menu.getAttribute('aria-hidden');
 
@@ -55,11 +56,12 @@ var theme = {
 			}, 800);
 			menu.setAttribute('aria-hidden', 'true');
 		}
-
 	},
 
-	checkCookie: function() {
-		var cookieBanner = document.getElementsByClassName('cookies')[0];
+
+	//check if terms accepted 
+	checkTerms: function() {
+		var cookieBanner = document.getElementsByClassName('terms')[0];
 		var buttonScroll = document.getElementsByClassName('button-scroll')[0];
 		var buttonScrollBottomOffset = 40;
 		var cookieBannerHeight = cookieBanner.offsetHeight;
@@ -79,8 +81,9 @@ var theme = {
 		}
 	},
 
+	//adjust body padding bottom according to cookies banner height 
 	setBodyPaddingBottom: function() {
-		var cookieBanner = document.getElementsByClassName('cookies')[0];
+		var cookieBanner = document.getElementsByClassName('terms')[0];
 		var cookieBannerHeight = cookieBanner.offsetHeight;
 		var buttonScroll = document.getElementsByClassName('button-scroll')[0];
 		buttonScroll.style.bottom = 0;
@@ -96,8 +99,9 @@ var theme = {
 		buttonScroll.style.bottom = (cookieBannerHeight + buttonScrollBottomOffset) + 'px';
 	},
 
+	//accept Terms and animation effect after accepting
 	acceptTerms: function() {
-		var cookieBanner = document.getElementsByClassName('cookies')[0];
+		var cookieBanner = document.getElementsByClassName('terms')[0];
 		var cookieBannerHeight = cookieBanner.offsetHeight;
 		var buttonScroll = document.getElementsByClassName('button-scroll')[0];
 		var buttonScrollBottomOffset = 40;
@@ -122,6 +126,7 @@ var theme = {
 		}, 600);
 	},
 
+	//slide scroll button in view on scroll
 	slideButtonInView: function() {
 		var buttonScrollTo = document.getElementsByClassName('button-scroll')[0];
 
