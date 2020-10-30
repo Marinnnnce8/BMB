@@ -8,7 +8,6 @@
 	}
 
 	&:not(.internal) {
-		// padding-bottom: 44%;
 		height: calc(100vh - 89px);
 
 		>span {
@@ -22,20 +21,19 @@
 		}
 
 		>svg {
-			width: 305px;
-			height: 305px;
 			fill: $white;
 			position: absolute;
-			left: -70px;
-			bottom: 18px;
 			z-index: 14;
 		}
 
 		.banner-inner {
-			padding: 0 0 65px 65px;
+			position: absolute;
+			top: 50%;
 		}
 
 		h1 {
+			background: $blue 0% 0% no-repeat padding-box;
+
 			&:last-of-type {
 				display: none;
 			}
@@ -43,14 +41,12 @@
 	}
 
 	&.internal {
-
 		.banner-inner {
 			padding: 0;
 			min-height: 338px;
 		}
 
 		h1 {
-			background-color: transparent;
 			font-size: 50px;
 			line-height: 60px;
 			margin-top: 5px;
@@ -66,14 +62,35 @@
 		}
 	}
 
-	@media (min-width: $breakpointMobile) {
+	@media (min-width: $breakpointMobileMin) {
+		&:not(.internal) h1 {
+			font-size: 40px;
+		}
+	}
+
+	@media (min-width: $breakpointTabletPortraitMin) {
 		&:not(.internal) {
 			height: calc(100vh - 126px);
+
+			>svg {
+				width: 470px;
+				height: 470px;
+				left: -108px;
+				top: 172px;
+			}
+
+			.banner-inner {
+				transform: translateY(12%);
+				left: 68px;
+			}
+
+			h1 {
+				line-height: 1.32;
+			}
 		}
 	}
 
 	@media (min-width: $breakpointTabletPortraitMax) {
-
 		&.internal {
 			padding: 0 25px;
 
@@ -94,32 +111,36 @@
 
 	@media (min-width: $breakpointTabletPortrait) {
 		&:not(.internal) {
-
 			>svg {
 				width: 305px;
 				height: 305px;
-				left: 66px;
-				bottom: 183px;
+				left: 35px;
+				top: 56px;
 			}
 
 			.banner-inner {
-				padding: 0 0 110px 190px;
+				transform: translateY(-61%);
+				left: 189px;
+			}
+
+			h1 {
+				font-size: 48px;
 			}
 		}
 	}
 
 	@media (min-width: $breakpointMedium) {
 		&:not(.internal) {
-
 			>svg {
-				width: 395px;
-				height: 395px;
-				left: 15px;
-				bottom: 206px;
+				width: 325px;
+				height: 325px;
+				left: 50px;
+				top: 100px;
 			}
 
 			.banner-inner {
-				padding: 0 0 113px 219px;
+				transform: translateY(-27%);
+				left: 220px;
 			}
 		}
 	}
@@ -131,51 +152,48 @@
 			>svg {
 				width: 444px;
 				height: 444px;
-				left: 231px;
-				top: 290px;
+				left: 233px;
+				top: 50%;
+				transform: translateY(-68%);
 			}
 
 			.banner-inner {
-				padding: 0 0 210px 558px;
+				transform: translateY(-10%);
+				left: 408px;
 			}
-			// .banner-inner {
-			// 	padding: 0 0 210px 260px;
-			// }
+
+			h1 {
+				font-size: 60px;
+			}
 		}
 	}
 
 	@media (max-width: $breakpointTabletPortrait) {
-		&:not(.internal) {
-			h1 {
-				&:first-of-type {
-					display: none;
-				}
+		&:not(.internal) h1 {
+			&:first-of-type {
+				display: none;
+			}
 
-				&:last-of-type {
-					display: inline;
-				}
+			&:last-of-type {
+				display: inline;
 			}
 		}
 	}
 
 	@media (max-width: $breakpointSmallMax) {
-		&:not(.internal) {
-			>span {
+		&:not(.internal)>span {
+			&:not(:nth-of-type(2)) {
+				display: none;
+			}
 
-				&:not(:nth-of-type(2)) {
-					display: none;
-				}
-
-				&:nth-of-type(2) {
-					display: block;
-				}
+			&:nth-of-type(2) {
+				display: block;
 			}
 		}
 	}
 
 	@media (max-width: $breakpointTabletPortraitMin) {
 		&:not(.internal) {
-
 			>span {
 				&:not(:last-of-type) {
 					display: none;
@@ -184,6 +202,22 @@
 				&:last-of-type {
 					display: block;
 				}
+			}
+
+			>svg {
+				width: 385px;
+				height: 385px;
+				left: -122px;
+				top: -17px;
+			}
+
+			.banner-inner {
+				left: 25px;
+				transform: translateY(-99%);
+			}
+
+			h1 {
+				font-size: 35px;
 			}
 		}
 	}
