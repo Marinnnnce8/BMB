@@ -28,13 +28,13 @@
 	<header class='header header-main' data-uk-sticky='{"animation":"uk-animation-slide-top","show-on-up":true}'>
 		<nav class='uk-navbar-container uk-navbar-transparent uk-navbar' data-uk-navbar>
 
-			<div class='uk-navbar-left'>
+			<div class='uk-navbar-left uk-width-expand'>
 				<a href='./index.html' class='uk-navbar-item uk-logo uk-padding-remove'>
-					<img src='./img/award.jpg' alt='BMB Druck & Service Logo'>
+					<img src='./img/logo_bmb-druck-und-service.png' loading="lazy" alt='BMB Druck & Service'>
 				</a>
 			</div>
 
-			<div class='uk-navbar-right'>
+			<div class='uk-navbar-right uk-width-auto'>
 				<ul class="uk-navbar-nav">
 					<li class="uk-active">
 						<a href="./index.html" aria-label="Go to Homepage">
@@ -43,29 +43,34 @@
 							</svg>
 						</a>
 					</li>
-					<li><a class="uk-text-uppercase" href="./index.html#druck">DRUCK</a></li>
-					<li><a class="uk-text-uppercase" href="./index.html#lettershop">LETTERSHOP</a></li>
-					<li><a class="uk-text-uppercase" href="./index.html#produkte">PRODUKTE</a></li>
-					<li><a class="uk-text-uppercase" href="./index.html#uber-uns">ÜBER UNS</a></li>
+					<li><a class="uk-text-uppercase" href="#druck" data-uk-scroll>DRUCK</a></li>
+					<li><a class="uk-text-uppercase" href="#lettershop" data-uk-scroll>LETTERSHOP</a></li>
+					<li><a class="uk-text-uppercase" href="#produkte" data-uk-scroll>PRODUKTE</a></li>
+					<li><a class="uk-text-uppercase" href="#uber-uns" data-uk-scroll>ÜBER UNS</a></li>
 					<li><a class="uk-text-uppercase" href="#kontakt" data-uk-scroll>KONTAKT</a></li>
 				</ul>
-				<div id="offcanvas-nav-primary" class="uk-width-1-1" data-uk-offcanvas>
-					<div class="uk-offcanvas-bar uk-width-1-1 uk-flex uk-flex-middle uk-flex-column">
+				<div class="uk-width-1-1 bmb-offcanvas js-menu" aria-hidden="true" aria-hidden='true'>
+					<div class="bmb-offcanvas-bar uk-width-1-1 uk-flex uk-flex-middle uk-flex-column">
 
 						<ul class="uk-nav uk-nav-center uk-margin-auto-vertical">
-							<li class="uk-active"><a class="uk-text-light" href="./index.html">Start</a></li>
-							<li><a class="uk-text-bold" href="./index.html#druck">Druck</a></li>
-							<li><a class="uk-text-bold" href="./index.html#lettershop">Lettershop</a></li>
-							<li><a class="uk-text-bold" href="./index.html#produkte">Produkte</a></li>
-							<li><a class="uk-text-bold" href="./index.html#uber-uns">Über Uns</a></li>
-							<li><a class="uk-text-bold" href="#kontakt" data-uk-scroll>Kontakt</a></li>
-							<li><a class="uk-text-light" href="./impressum.html">Impressum</a></li>
-							<li><a class="uk-text-light" href="./datenschutz.html">Datenschutz</a></li>
+							<li class="uk-active nav-link"><a class="uk-text-light" href="./index.html">Start</a></li>
+							<li class="nav-link"><a class="uk-text-bold js-scroll" href="#druck"
+									data-uk-scroll>Druck</a></li>
+							<li class="nav-link"><a class="uk-text-bold js-scroll" href="#lettershop"
+									data-uk-scroll>Lettershop</a></li>
+							<li class="nav-link"><a class="uk-text-bold js-scroll" href="#produkte"
+									data-uk-scroll>Produkte</a></li>
+							<li class="nav-link"><a class="uk-text-bold js-scroll" href="#uber-uns" data-uk-scroll>Über
+									Uns</a></li>
+							<li class="nav-link"><a class="uk-text-bold js-scroll" href="#kontakt"
+									data-uk-scroll>Kontakt</a></li>
+							<li class="nav-link"><a class="uk-text-light" href="./impressum.html">Impressum</a></li>
+							<li class="nav-link"><a class="uk-text-light" href="./datenschutz.html">Datenschutz</a></li>
 						</ul>
 					</div>
 				</div>
-				<button class="uk-button burger-menu uk-flex uk-flex-center uk-flex-middle"
-					data-uk-toggle="target: #offcanvas-nav-primary" aria-label="Navigation öffnen">
+				<button class="burger-menu js-burger uk-flex uk-flex-center uk-flex-middle"
+					aria-label="Navigation öffnen">
 					<span>
 						<span role="presentation"></span>
 						<span role="presentation"></span>
@@ -230,7 +235,7 @@
 
 	</main>
 
-	<footer class="footer" id="kontakt">
+	<footer class="footer uk-overflow-hidden uk-position-relative" id="kontakt">
 		<div class="footer-top uk-text-center">
 			<div class="uk-container">
 				<h2 data-uk-scrollspy="cls: uk-animation-slide-top; delay: 350">So erreichen Sie uns</h2>

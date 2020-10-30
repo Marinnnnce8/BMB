@@ -83,20 +83,22 @@ var theme = {
 
 	//adjust body padding bottom according to cookies banner height 
 	setBodyPaddingBottom: function() {
-		var cookieBanner = document.getElementsByClassName('cookies')[0];
-		var cookieBannerHeight = cookieBanner.offsetHeight;
-		var buttonScroll = document.getElementsByClassName('button-scroll')[0];
-		buttonScroll.style.bottom = 0;
-		var buttonScrollBottomOffset = 40;
-		var bmbBody = document.getElementsByTagName('body')[0];
-		bmbBody.style.paddingBottom = 0;
+		setTimeout(function () {
+			var cookieBanner = document.getElementsByClassName('cookies')[0];
+			var cookieBannerHeight = cookieBanner.offsetHeight;
+			var buttonScroll = document.getElementsByClassName('button-scroll')[0];
+			buttonScroll.style.bottom = 0;
+			var buttonScrollBottomOffset = 40;
+			var bmbBody = document.getElementsByTagName('body')[0];
+			bmbBody.style.paddingBottom = 0;
 
-		if (window.matchMedia("screen and (max-width: 414px)").matches) {
-			buttonScrollBottomOffset = 30;
-		}
+			if (window.matchMedia("screen and (max-width: 414px)").matches) {
+				buttonScrollBottomOffset = 30;
+			}
 
-		bmbBody.style.paddingBottom = cookieBannerHeight + 'px';
-		buttonScroll.style.bottom = (cookieBannerHeight + buttonScrollBottomOffset) + 'px';
+			bmbBody.style.paddingBottom = cookieBannerHeight + 'px';
+			buttonScroll.style.bottom = (cookieBannerHeight + buttonScrollBottomOffset) + 'px';
+		}, 170);
 	},
 
 	//accept Terms and animation effect after accepting
