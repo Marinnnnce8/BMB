@@ -58,6 +58,11 @@
         color: $white;
         font-size: 25px;
         line-height: 60px;
+        transition: $speed $timing;
+
+        @include hover {
+            color: $black;
+        }
     }
 }
 
