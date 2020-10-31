@@ -1,25 +1,29 @@
 <!doctype html>
-<html lang='de' class='template-home section-home'>
+<html lang='de'>
 
 <head>
 
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 	<meta name='format-detection' content='telephone=no'>
+	<title>BMB Druck & Service GmbH - Startseite</title>
+	<meta name='description' content='Wir setzen auf partnerschaftliche und langfristige Zusammenarbeit'>
+	<meta name="keywords" content="BMB, Druck, Service, GmbH, print, produkte, Druckerzeugnissen">
+	<!-- <link rel="canonical" href="http://www.bmb.de/"> -->
 
-	<title>BMB Druck & Service GmbH - Impressum</title>
-	<meta name='description' content='This is a meta description'>
+	<!-- <meta name="robots" content="index, follow">
+	<meta name="googlebot" content="index, follow"> -->
 
 	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-	<!-- <link rel="manifest" href="./favicon/site.webmanifest"> -->
+	<link rel="manifest" href="./site.webmanifest">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 	<meta name="apple-mobile-web-app-title" content="BMB">
 	<meta name="application-name" content="BMB">
-	<link rel='stylesheet' href='css/uikit.min.css' />
-	<link rel='stylesheet' href='css/theme.min.css' />
+	<link rel='stylesheet' href='./css/uikit.min.css' />
+	<link rel='stylesheet' href='./css/theme.min.css' />
 </head>
 
 <body id="top">
@@ -128,7 +132,7 @@
 					<hr class="uk-divider-small blue">
 					<ul class="uk-padding-remove-left">
 						<li class="uk-text-bold">Kontakt</li>
-						<li><a href="mailto:r.berger@bmb-druckservice.de?subject=Ihre&nbspAnfrage"
+						<li><a href="mailto:r.berger@bmb-druckservice.de?subject=Ihre&nbsp;Anfrage"
 								class="uk-button uk-button-text">r.berger@bmb-druckservice.de</a></li>
 						<li>Telefon 0211 - 68 20 07</li>
 						<li>Fax 0211 - 67 61 33</li>
@@ -271,7 +275,7 @@
 								</h3>
 							</div>
 							<a class="uk-button uk-button-text"
-								href="mailto:info@bmb-druckservice.de?subject=Ihre&nbspAnfrage">info@bmb-druckservice.de</a>
+								href="mailto:info@bmb-druckservice.de?subject=Ihre&nbsp;Anfrage">info@bmb-druckservice.de</a>
 						</div>
 					</div>
 				</div>
@@ -298,9 +302,21 @@
 		</div>
 	</footer>
 
-	<script src="js/uikit.min.js"></script>
-	<script src="js/svgxuse.min.js"></script>
-	<script src='js/theme.js'></script>
+	<script src="./js/uikit.min.js"></script>
+	<script src="./js/svgxuse.min.js"></script>
+	<script src='./js/theme.min.js'></script>
+	<script>
+		if ('serviceWorker' in navigator) {
+			console.log('CLIENT: service worker registration in progress.');
+			navigator.serviceWorker.register('./sw.js').then(function () {
+				console.log('CLIENT: service worker registration complete.');
+			}, function () {
+				console.log('CLIENT: service worker registration failure.');
+			});
+		} else {
+			console.log('CLIENT: service worker is not supported.');
+		}
+	</script>
 </body>
 
 </html>

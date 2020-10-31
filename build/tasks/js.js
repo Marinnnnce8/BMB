@@ -14,6 +14,6 @@ gulp.task('js-uikit', () => {
 });
 
 gulp.task('js', gulp.series(
-	'js-copy',
+	// 'js-copy',
 	'js-uikit'
 ));

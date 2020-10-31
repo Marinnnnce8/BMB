@@ -1,4 +1,6 @@
 .banner {
+	z-index: 1;
+
 	>svg {
 		color: $white;
 		fill: $white;
@@ -20,7 +22,7 @@
 		>svg {
 			fill: $white;
 			position: absolute;
-			z-index: 14;
+			z-index: 1;
 		}
 
 		.banner-inner {
@@ -225,7 +227,7 @@
 }
 
 .banner-inner {
-	z-index: 14;
+	z-index: 2;
 }
 
 .banner-video {
