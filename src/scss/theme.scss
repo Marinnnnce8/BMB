@@ -15,8 +15,6 @@
 @import './layout/buttons.scss';
 
 // UIkit
-@import './uikit/breadcrumb.scss';
-@import './uikit/form.scss';
 @import './uikit/offcanvas.scss';
 
 // Modules
@@ -35,11 +33,9 @@
 @import './modules/cookies.scss';
 
 // Theme
-@import 'theme/base.scss';
 @import 'theme/header.scss';
 @import 'theme/footer.scss';
 @import 'theme/ie11.scss';
-@import 'theme/print.scss';
 
 
 // Template | Remove or Integrate

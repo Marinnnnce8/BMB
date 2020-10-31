@@ -303,17 +303,13 @@
     }
 
     @media (max-width: $breakpointMobile) {
+        a:last-of-type {
+            max-width: 32%;
+            width: 100%;
 
-        a {
-
-            &:last-of-type {
-                max-width: 32%;
-                width: 100%;
-
-                span {
-                    max-width: 56%;
-                    text-align: center;
-                }
+            span {
+                max-width: 56%;
+                text-align: center;
             }
         }
 
@@ -324,9 +320,7 @@
     }
 
     @media (max-width: $breakpointMobileMin) {
-
         a {
-
             &:last-of-type {
                 display: block;
                 max-width: 100%;

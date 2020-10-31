@@ -86,18 +86,14 @@ $links: 8;
 
 // Set delay per List Item
 @for $i from 1 through $links {
-    $delay: .045 * $i;
-
     .nav-link:nth-child(#{$i}) {
-        animation-delay: #{$delay}s;
+        animation-delay: .045s * $i;
     }
 }
 
 // Set delay per List Item
 @for $i from 1 through $links {
-    $delay: .625 * $i;
-
     .animation-slide-out .nav-link:nth-child(#{$i}) {
-        animation-delay: #{$delay}s;
+        animation-delay: .045s * $i;
     }
 }

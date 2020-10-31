@@ -1,7 +1,6 @@
 @media screen and (-ms-high-contrast: active),
 screen and (-ms-high-contrast: none) {
     .uk-button-default {
-
         @include hover {
             background-color: $pink;
             color: $white;
@@ -16,6 +15,36 @@ screen and (-ms-high-contrast: none) {
     .banner {
         &.internal .banner-inner {
             padding-top: 125px;
+        }
+    }
+
+    .druck-middle {
+        >svg {
+            display: none;
+        }
+
+        .uk-svg {
+            display: block;
+            height: 277px;
+            top: 63px;
+        }
+    }
+
+    .teaser-section .uk-card {
+        padding-bottom: 50px;
+
+        svg {
+            pointer-events: none;
+        }
+
+        // .uk-child-width-1-3>div:last-of-type svg {
+        //     width: 155px;
+        // }
+
+        @include hover {
+            svg {
+                fill: $gray-dark !important;
+            }
         }
     }
 }

@@ -1,7 +1,4 @@
-//----------  banner
-//------------------------------------------------------------------------------
 .banner {
-
 	>svg {
 		color: $white;
 		fill: $white;
@@ -231,7 +228,7 @@
 	z-index: 14;
 }
 
-.video-wrap {
+.banner-video {
 	position: absolute;
 	width: calc(100vh * (1000 / 562));
 	/*  video width / height  */

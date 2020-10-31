@@ -76,13 +76,10 @@
             justify-content: space-between;
         }
 
-        // sass-lint:disable class-name-format
         .uk-child-width-1-4>* {
             width: auto;
             max-width: 50%;
         }
-
-        // sass-lint:enable class-name-format
 
         *+.uk-grid-margin,
         .uk-grid+.uk-grid,
@@ -92,13 +89,9 @@
     }
 
     @media (min-width: $breakpointSmallMax) {
-
-        // sass-lint:disable class-name-format
         .uk-child-width-1-4>* {
             width: 25%;
         }
-
-        // sass-lint:enable class-name-format
     }
 
     @media (max-width: $breakpointTabletPortraitMin) {
@@ -106,13 +99,10 @@
             justify-content: center;
         }
 
-        // sass-lint:disable class-name-format
         .uk-child-width-1-4>* {
             width: 100%;
             max-width: 100%;
         }
-
-        // sass-lint:enable class-name-format
 
         *+.uk-grid-margin,
         .uk-grid+.uk-grid,

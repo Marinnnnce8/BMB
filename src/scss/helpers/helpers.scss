@@ -107,3 +107,7 @@ abbr[title] {
 	position: absolute;
 	width: 1px;
 }
+
+.read-only {
+	@include visually-hidden;
+}
