@@ -24,7 +24,6 @@
 
 <body id="top">
 
-	<!-- MAIN HEADER -->
 	<header class='header header-main' data-uk-sticky='{"animation":"uk-animation-slide-top","show-on-up":true}'>
 		<nav class='uk-navbar-container uk-navbar-transparent uk-navbar' data-uk-navbar>
 
@@ -36,8 +35,8 @@
 
 			<div class='uk-navbar-right uk-width-auto'>
 				<ul class="uk-navbar-nav">
-					<li class="uk-active">
-						<a href="./index.html" aria-label="Go to Homepage">
+					<li>
+						<a href="./index.html" aria-label="Zur Homepage">
 							<svg viewBox="0 0 512 512">
 								<title>Home</title>
 								<use xlink:href="./symbol/icons.svg#navigation-home"></use>
@@ -50,11 +49,11 @@
 					<li><a class="uk-text-uppercase" href="#uber-uns" data-uk-scroll>ÜBER UNS</a></li>
 					<li><a class="uk-text-uppercase" href="#kontakt" data-uk-scroll>KONTAKT</a></li>
 				</ul>
-				<div class="uk-width-1-1 bmb-offcanvas js-menu" aria-hidden="true" aria-hidden='true'>
+				<div class="uk-width-1-1 bmb-offcanvas js-menu" aria-hidden='true'>
 					<div class="bmb-offcanvas-bar uk-width-1-1 uk-flex uk-flex-middle uk-flex-column">
 
 						<ul class="uk-nav uk-nav-center uk-margin-auto-vertical">
-							<li class="uk-active nav-link"><a class="uk-text-light" href="./index.html">Start</a></li>
+							<li class="nav-link"><a class="uk-text-light" href="./index.html">Start</a></li>
 							<li class="nav-link"><a class="uk-text-bold js-scroll" href="#druck"
 									data-uk-scroll>Druck</a></li>
 							<li class="nav-link"><a class="uk-text-bold js-scroll" href="#lettershop"
@@ -81,7 +80,6 @@
 			</div>
 		</nav>
 	</header>
-	<!-- MAIN HEADER -->
 
 	<main>
 		<a class="uk-button button-scroll uk-flex uk-flex-center uk-flex-middle with-cookie uk-padding-remove"
@@ -111,12 +109,12 @@
 		</div>
 
 		<section class="banner uk-position-relative uk-overflow-hidden">
-			<span class="uk-background-cover uk-position-cover" data-uk-img
-				style="background-image: url('./img/banner-img.png');" role="presentation"></span>
-			<span class="uk-background-cover uk-position-cover" data-uk-img
-				style="background-image: url('./img/keyvisual-tablet.jpg');" role="presentation"></span>
-			<span class="uk-background-cover uk-position-cover" data-uk-img
-				style="background-image: url('./img/keyvisual-mobile.jpg');" role="presentation"></span>
+			<span class="uk-background-cover uk-position-cover" data-uk-img data-src="./img/banner-img.png"
+				role="presentation"></span>
+			<span class="uk-background-cover uk-position-cover" data-uk-img data-src="./img/keyvisual-tablet.jpg"
+				role="presentation"></span>
+			<span class="uk-background-cover uk-position-cover" data-uk-img data-src="./img/keyvisual-mobile.jpg"
+				role="presentation"></span>
 			<svg viewBox="0 0 512 512">
 				<title>BMB</title>
 				<use xlink:href="./symbol/icons.svg#keyvisual-marks"></use>
@@ -126,8 +124,8 @@
 				<h1>Seit über 25<br> Jahren drucken<br> wir mit Engagement<br> und Leidenschaft</h1>
 			</div>
 			<div class="video-wrap">
-				<video class="uk-position-cover uk-width-1-1 uk-position-z-index" src="./img/bmb_druck_start_video.mp4"
-					loop muted playsinline data-uk-video="autoplay: inview"></video>
+				<!-- <video class="uk-position-cover uk-width-1-1 uk-position-z-index" src="./img/bmb_druck_start_video.mp4"
+					loop muted playsinline data-uk-video="autoplay: inview"></video> -->
 			</div>
 		</section>
 
@@ -162,7 +160,7 @@
 						<div
 							class="uk-card uk-flex uk-flex-column uk-flex-around border-bottom-blue uk-overflow-hidden uk-text-center">
 							<a class="uk-position-cover uk-position-z-index" href="#druck" data-uk-scroll
-								aria-label="Gehe zu Modernste Drucktechnik"></a>
+								aria-label="Zur Modernste Drucktechnik"></a>
 							<svg class="uk-margin-auto" viewBox="0 0 24 24">
 								<use xlink:href="./symbol/icons.svg#teaser-print"></use>
 							</svg>
@@ -173,7 +171,7 @@
 						<div
 							class="uk-card uk-flex uk-flex-column uk-flex-around border-bottom-pink uk-overflow-hidden uk-text-center">
 							<a class="uk-position-cover uk-position-z-index" href="#lettershop" data-uk-scroll
-								aria-label="Gehe zu Professioneller Lettershop"></a>
+								aria-label="Zur Professioneller Lettershop"></a>
 							<svg class="uk-margin-auto" viewBox="0 0 24 24">
 								<use xlink:href="./symbol/icons.svg#teaser-lettershop"></use>
 							</svg>
@@ -184,11 +182,11 @@
 						<div
 							class="uk-card uk-flex uk-flex-column uk-flex-around border-bottom-yellow uk-overflow-hidden uk-text-center">
 							<a class="uk-position-cover uk-position-z-index" href="#produkte" data-uk-scroll
-								aria-label="Gehe zu Innovative Produkte"></a>
+								aria-label="Zur Innovative Produkte"></a>
 							<svg class="uk-margin-auto" viewBox="0 0 24 24">
 								<use xlink:href="./symbol/icons.svg#teaser-products"></use>
 							</svg>
-							<span class="uk-card-title uk-margin-remove-bottom">Innovative Produkte</span>
+							<span class="uk-card-title uk-margin-remove-bottom">Innovative<br> Produkte</span>
 						</div>
 					</div>
 				</div>
@@ -227,9 +225,9 @@
 				</div>
 			</div>
 			<div class="druck-middle uk-position-relative check-list">
-				<svg viewBox="0 0 190 275" data-uk-scrollspy="cls: uk-a
-				<title>BMB</title>nimation-fade; delay: 350">
-					<use xlink:href="./symbol/icons.svg#keyvisual-marks"></use>
+				<svg viewBox="0 0 190 275" data-uk-scrollspy="cls: uk-animation-fade; delay: 350">
+					<title>BMB</title>
+					<use xlink:href="./symbol/icons.svg#intro-print"></use>
 				</svg>
 				<div class="uk-container" data-uk-scrollspy="cls: uk-animation-fade; delay: 500">
 					<div class="uk-flex uk-flex-center uk-text-center uk-position-relative uk-position-z-index">
@@ -527,7 +525,7 @@
 									<span class="files-icon uk-margin-small-right" role="presentation"></span>
 									<div>
 										<span>Für alle Kleinauflagen</span>
-										<span class="uk-text-bold">und Einzelstücke</span>
+										<span>und Einzelstücke</span>
 									</div>
 								</li>
 							</ul>
@@ -555,8 +553,7 @@
 						<div>
 							<div class="uk-card">
 								<div class="uk-card-media-top uk-position-relative uk-background-cover" data-uk-img
-									style="background-image: url('./img/print-teaser_praegen.jpg');"
-									role="presentation"></div>
+									data-src="./img/print-teaser_praegen.jpg" role="presentation"></div>
 								<div class="uk-card-body uk-padding-remove-horizontal uk-padding-remove-bottom">
 									<h3 class="uk-card-title color-gray">Heißfolienprägung, Blindprägung, Reliefprägung
 										und Strukturprägung</h3>
@@ -571,8 +568,7 @@
 						<div>
 							<div class="uk-card">
 								<div class="uk-card-media-top uk-position-relative uk-background-cover" data-uk-img
-									style="background-image: url('./img/print-teaser_uv_lack.jpg');"
-									role="presentation"></div>
+									data-src="./img/print-teaser_uv_lack.jpg" role="presentation"></div>
 								<div class="uk-card-body uk-padding-remove-horizontal uk-padding-remove-bottom">
 									<h3 class="uk-card-title color-gray">Partieller UV-Lack</h3>
 									<p>UV-Lack (auch Spotlack genannt) ist ein gängiges Ver­edelungsverfahren. Der Lack
@@ -588,8 +584,7 @@
 						<div>
 							<div class="uk-card">
 								<div class="uk-card-media-top uk-position-relative uk-background-cover" data-uk-img
-									style="background-image: url('./img/print-teaser_relieflack.jpg');"
-									role="presentation"></div>
+									data-src="./img/print-teaser_relieflack.jpg" role="presentation"></div>
 								<div class="uk-card-body uk-padding-remove-horizontal uk-padding-remove-bottom">
 									<h3 class="uk-card-title color-gray">Relieflack</h3>
 									<p>Ein spürbarer Unterschied: Der glatte, edel-glänzende Relieflack lässt Schriften
@@ -632,7 +627,7 @@
 						</div>
 						<div class="lettershop-intro-text uk-margin-auto"
 							data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 450">
-							<p class="uk-text-light uk-margin-medium-bottom">Wir übernehmen nicht nur den Druck in
+							<p class="uk-text-light">Wir übernehmen nicht nur den Druck in
 								bester
 								Qualität – wir organisieren auch einen
 								kostengünstigen
@@ -660,7 +655,8 @@
 							<div class="progress-box uk-flex uk-flex-left">
 								<div class="uk-card uk-flex uk-flex-column uk-flex-middle">
 									<div class="uk-card-media-top uk-position-relative">
-										<img class="uk-width-1-1" src="./img/lettershop-print.svg" data-uk-img
+										<img class="uk-width-1-1" src="./img/lettershop-print.svg"
+											data-src="./img/lettershop-print.svg" width="150" height="150" data-uk-img
 											alt="print">
 										<svg class="arrow down" viewBox="0 0 24 24">
 											<title>Arrow down</title>
@@ -681,7 +677,8 @@
 							<div class="progress-box">
 								<div class="uk-card uk-flex uk-flex-column uk-flex-middle">
 									<div class="uk-card-media-top uk-position-relative">
-										<img class="uk-width-1-1" src="./img/lettershop-data.svg" data-uk-img
+										<img class="uk-width-1-1" src="./img/lettershop-data.svg"
+											data-src="./img/lettershop-data.svg" width="150" height="150" data-uk-img
 											alt="data">
 										<svg class="arrow" viewBox="0 0 24 24">
 											<title>Arrow up</title>
@@ -702,8 +699,9 @@
 							<div class="progress-box">
 								<div class="uk-card uk-flex uk-flex-column uk-flex-middle">
 									<div class="uk-card-media-top uk-position-relative">
-										<img class="uk-width-1-1" src="./img/lettershop-personalization.svg" data-uk-img
-											alt="person icon">
+										<img class="uk-width-1-1" src="./img/lettershop-personalization.svg"
+											data-src="./img/lettershop-personalization.svg" width="150" height="150"
+											data-uk-img alt="person icon">
 										<svg class="arrow down" viewBox="0 0 24 24">
 											<title>Arrow down</title>
 											<use xlink:href="./symbol/icons.svg#lettershop-arrow-down"></use>
@@ -723,7 +721,8 @@
 							<div class="progress-box">
 								<div class="uk-card uk-flex uk-flex-column uk-flex-middle">
 									<div class="uk-card-media-top uk-position-relative">
-										<img class="uk-width-1-1" src="./img/lettershop--stamp.svg" data-uk-img
+										<img class="uk-width-1-1" src="./img/lettershop--stamp.svg"
+											data-src="./img/lettershop--stamp.svg" width="150" height="150" data-uk-img
 											alt="stamp">
 										<svg class="arrow" viewBox="0 0 24 24">
 											<title>Arrow up</title>
@@ -744,8 +743,9 @@
 							<div class="progress-box uk-flex uk-flex-right">
 								<div class="uk-card uk-flex uk-flex-column uk-flex-middle">
 									<div class="uk-card-media-top uk-position-relative">
-										<img class="uk-width-1-1" src="./img/lettershop-shipping.svg" data-uk-img
-											alt="letter">
+										<img class="uk-width-1-1" src="./img/lettershop-shipping.svg"
+											data-src="./img/lettershop-shipping.svg" width="150" height="150"
+											data-uk-img alt="letter">
 									</div>
 									<div class="uk-card-body uk-text-center uk-padding-remove">
 										<h3 class="uk-card-title">Versand und Postauslieferung</h3>
@@ -762,6 +762,8 @@
 						<h2 class="uk-margin-medium-bottom" data-uk-scrollspy="cls: uk-animation-slide-top; delay: 350">
 							Unsere Lettershop-Leistungen im Detail</h2>
 					</div>
+				</div>
+				<div class="uk-container">
 					<div class="uk-child-width-1-4 uk-grid-small" data-uk-grid
 						data-uk-scrollspy="target: > div;cls: uk-animation-fade; delay: 350">
 						<div>
@@ -1030,7 +1032,8 @@
 		<section class="produkte-section" id="produkte">
 			<div class="produkte-intro uk-position-relative uk-text-center">
 				<span data-uk-scrollspy="cls: uk-animation-fade; delay: 350" role="presentation">
-					<img class="uk-position-top-center" src="./img/intro-products.svg" data-uk-svg alt="products">
+					<img class="uk-position-top-center" width="150" height="150" src="./img/intro-products.svg"
+						data-uk-svg alt="products">
 				</span>
 				<div class="uk-container">
 					<div class="uk-position-relative uk-position-z-index">
@@ -1056,7 +1059,9 @@
 							<div class="progress-box uk-flex uk-flex-left">
 								<div class="uk-card uk-flex uk-flex-column uk-flex-middle">
 									<div class="uk-card-media-top uk-position-relative">
-										<img class="uk-width-1-1" src="./img/products-idea.svg" data-uk-img alt="lamp">
+										<img class="uk-width-1-1" src="./img/products-idea.svg"
+											data-src="./img/products-idea.svg" width="150" height="150" data-uk-img
+											alt="lamp">
 										<svg class="arrow green down" viewBox="0 0 24 24">
 											<title>Arrow down</title>
 											<use xlink:href="./symbol/icons.svg#products-arrow-down"></use>
@@ -1076,7 +1081,8 @@
 							<div class="progress-box">
 								<div class="uk-card uk-flex uk-flex-column uk-flex-middle">
 									<div class="uk-card-media-top uk-position-relative">
-										<img class="uk-width-1-1" src="./img/products-bubbles.svg" data-uk-img
+										<img class="uk-width-1-1" src="./img/products-bubbles.svg"
+											data-src="./img/products-bubbles.svg" width="150" height="150" data-uk-img
 											alt="bubbles">
 										<svg class="arrow green" viewBox="0 0 24 24">
 											<title>Arrow up</title>
@@ -1097,7 +1103,8 @@
 							<div class="progress-box">
 								<div class="uk-card uk-flex uk-flex-column uk-flex-middle">
 									<div class="uk-card-media-top uk-position-relative">
-										<img class="uk-width-1-1" src="./img/products-template.svg" data-uk-img
+										<img class="uk-width-1-1" src="./img/products-template.svg"
+											data-src="./img/products-template.svg" width="150" height="150" data-uk-img
 											alt="template">
 										<svg class="arrow green down" viewBox="0 0 24 24">
 											<title>Arrow down</title>
@@ -1118,7 +1125,8 @@
 							<div class="progress-box">
 								<div class="uk-card uk-flex uk-flex-column uk-flex-middle">
 									<div class="uk-card-media-top uk-position-relative">
-										<img class="uk-width-1-1" src="./img/products-design.svg" data-uk-img
+										<img class="uk-width-1-1" src="./img/products-design.svg"
+											data-src="./img/products-design.svg" width="150" height="150" data-uk-img
 											alt="design">
 										<svg class="arrow green" viewBox="0 0 24 24">
 											<title>Arrow up</title>
@@ -1139,7 +1147,8 @@
 							<div class="progress-box uk-flex uk-flex-right">
 								<div class="uk-card uk-flex uk-flex-column uk-flex-middle">
 									<div class="uk-card-media-top uk-position-relative">
-										<img class="uk-width-1-1" src="./img/products-print.svg" data-uk-img
+										<img class="uk-width-1-1" src="./img/products-print.svg"
+											data-src="./img/products-print.svg" width="150" height="150" data-uk-img
 											alt="print">
 									</div>
 									<div class="uk-card-body uk-text-center uk-padding-remove">
@@ -1181,8 +1190,8 @@
 						data-uk-scrollspy="target: > div;cls: uk-animation-fade; delay: 300">
 						<div>
 							<div class="uk-card">
-								<div class="uk-card-media-top uk-background-cover" data-uk-img
-									style="background-image: url('./img/award.jpg');"></div>
+								<div class="uk-card-media-top uk-background-cover" data-src="./img/award.jpg"
+									data-uk-img></div>
 								<div class="uk-card-body">
 									<h3 class="uk-card-title uk-margin-remove-top">Der Innovationspreis der Deutschen
 										Druckindustrie</h3>
@@ -1205,7 +1214,7 @@
 						<div>
 							<div class="uk-card">
 								<div class="uk-card-media-top uk-background-cover" data-uk-img
-									style="background-image: url('./img/targobank.jpg');"></div>
+									data-src="./img/targobank.jpg"></div>
 								<div class="uk-card-body">
 									<p class="uk-margin-remove uk-text-light"><b>Die Herausforderung:</b> Konzeption,
 										Entwicklung und Herstellung eines
@@ -1227,9 +1236,9 @@
 			<div class="about-wrap uk-flex">
 				<div class="uk-width-1-2" data-uk-scrollspy="cls: uk-animation-slide-left; delay: 350">
 					<div class="uk-height-1-1 about-banner">
-						<span style="background-image: url('./img/aboutus_big.jpg');" data-uk-img
+						<span data-src="./img/aboutus_big.jpg" data-uk-img
 							class="uk-background-cover uk-width-1-1 uk-height-1-1" role="presentation"></span>
-						<span style="background-image: url('./img/aboutus_big_mobile.jpg');" data-uk-img
+						<span data-src="./img/aboutus_big_mobile.jpg" data-uk-img
 							class="uk-background-cover uk-width-1-1 uk-height-1-1" role="presentation"></span>
 					</div>
 				</div>
@@ -1257,14 +1266,13 @@
 								unsere
 								hochwertigen Druckerzeugnissen werden sie überzeugen.</p>
 						</div>
-						<span class="uk-background-cover" style="background-image: url('./img/aboutus_small.jpg');"
-							data-uk-img role="presentation"></span>
+						<span class="uk-background-cover" data-src="./img/aboutus_small.jpg" data-uk-img
+							role="presentation"></span>
 					</div>
 				</div>
 			</div>
-			<span class="uk-background-cover uk-width-1-1 about-box" data-uk-img
-				style="background-image: url('./img/bnd_aussen.jpg');" role="presentation"
-				data-uk-scrollspy="cls: uk-animation-fade; delay: 350"></span>
+			<span class="uk-background-cover uk-width-1-1 about-box" data-src="./img/bnd_aussen.jpg" data-uk-img
+				role="presentation" data-uk-scrollspy="cls: uk-animation-fade; delay: 350"></span>
 		</section>
 
 		<section class="reference-section bg-gray-alt uk-text-center">
@@ -1555,7 +1563,8 @@
 					<div>
 						<div class="addresse">
 							<div class="uk-flex uk-flex-column">
-								<img src="./img/footer-pin.svg" data-uk-img alt="image">
+								<img src="./img/footer-pin.svg" data-src="./img/footer-pin.svg" width="53" height="53"
+									data-uk-img alt="image">
 								<h3 class="color-blue uk-text-normal uk-margin-remove-top">
 									Adresse</h3>
 							</div>
@@ -1567,7 +1576,8 @@
 					<div>
 						<div class="phone">
 							<div class="uk-flex uk-flex-column">
-								<img src="./img/footer-phone.svg" data-uk-img alt="image">
+								<img src="./img/footer-phone.svg" data-src="./img/footer-phone.svg" width="53"
+									height="53" data-uk-img alt="image">
 								<h3 class="color-blue uk-text-normal uk-margin-remove-top">
 									Kontakt</h3>
 							</div>
@@ -1580,7 +1590,8 @@
 					<div>
 						<div class="email">
 							<div class="uk-flex uk-flex-column">
-								<img src="./img/footer-mail.svg" data-uk-img alt="image">
+								<img src="./img/footer-mail.svg" data-src="./img/footer-mail.svg" width="53" height="53"
+									data-uk-img alt="image">
 								<h3 class="color-blue uk-text-normal uk-margin-remove-top">E-Mail
 								</h3>
 							</div>

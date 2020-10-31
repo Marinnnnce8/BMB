@@ -6,7 +6,7 @@
 
     @media (min-width: $breakpointTabletPortraitMax) {
         >.uk-background-cover {
-            min-height: 312px;
+            min-height: 326px;
         }
     }
 
@@ -30,6 +30,12 @@
 
         &:last-of-type {
             display: none;
+        }
+    }
+
+    @media (min-width: $breakpointMobile) {
+        span {
+            min-height: 326px;
         }
     }
 
@@ -84,7 +90,7 @@
 
         h2 {
             color: $black;
-            margin-top: 58px;
+            margin-top: 55px;
         }
     }
 
@@ -107,7 +113,7 @@
     }
 
     @media (min-width: $breakpointTabletPortrait) {
-        padding: 20px 28px 40px;
+        padding: 20px 47px 40px;
     }
 
     @media (min-width: $breakpointMedium) {
@@ -123,11 +129,6 @@
 
         h2 {
             margin: 55px 0 25px;
-        }
-
-        svg {
-            width: 95px;
-            height: 95px;
         }
     }
 }

@@ -80,7 +80,7 @@
         padding: 100px 0;
 
         &.impressum-contact {
-            padding: 100px 0;
+            padding: 95px 0 100px;
         }
 
         &.info {
@@ -92,7 +92,7 @@
         }
 
         &.daten {
-            padding: 100px 0 200px;
+            padding: 100px 0 150px;
 
             ul,
             a,
@@ -138,9 +138,9 @@
         }
     }
 
-    @media (min-width: $breakpointLarge) {
+    @media (min-width: $breakpointMedium) {
         .uk-container-small {
-            padding-left: 230px;
+            padding-left: 34%;
         }
     }
 }

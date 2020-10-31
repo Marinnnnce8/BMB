@@ -14,7 +14,7 @@
 
     .uk-svg,
     .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
-        width: 903px;
+        width: calc(100% - 50px);
         height: 500px;
         color: $gray-light;
         fill: $gray-light;
@@ -32,6 +32,8 @@
         .uk-svg,
         .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
             top: -60px;
+            width: 903px;
+            height: 500px;
         }
     }
 
@@ -41,23 +43,30 @@
 }
 
 .produkte-intro-text {
-    max-width: 1064px;
+    max-width: 774px;
     padding-top: 15px;
 
     p:last-of-type {
         margin-bottom: 30px;
     }
 
-    @media (min-width: $breakpointTabletPortrait) {
+    @media (min-width: $breakpointTabletPortraitMax) {
         padding-top: 30px;
         text-align: center;
     }
 
     @media (min-width: $breakpointMedium) {
+        max-width: 1064px;
         padding-top: 0;
 
         p:last-of-type {
             margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: $breakpointMobile) {
+        p:last-of-type {
+            margin-bottom: 50px;
         }
     }
 }
@@ -198,8 +207,8 @@
     @media (max-width: $breakpointMedium) and (min-width: $breakpointTabletPortrait) {
 
         h3 {
-            font-size: 19px;
             line-height: 24px;
+            font-size: 19px;
         }
 
         .text {
@@ -216,7 +225,7 @@
 
     @media (max-width: $breakpointLarge) and (min-width: $breakpointTabletPortrait) {
         .text .info {
-            display: block;
+            display: inline-block;
         }
     }
 
@@ -257,13 +266,26 @@
             padding-right: 25px;
         }
 
-        .uk-child-width-1-2>* {
-            width: 100%;
+        .uk-child-width-1-2 {
+            >* {
+                width: 100%;
+            }
+
+            >div:first-of-type h3 {
+                font-size: 25px;
+            }
         }
 
         h3 {
             font-size: 19px;
             line-height: 25px;
+        }
+    }
+
+    @media (max-width: $breakpointTabletPortraitMin) {
+
+        .uk-child-width-1-2>div:first-of-type h3 {
+            font-size: 19px;
         }
     }
 

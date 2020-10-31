@@ -33,6 +33,10 @@
                 font-size: 16px;
                 display: block;
                 line-height: 20px;
+
+                &:not(.uk-text-bold) {
+                    font-weight: 400;
+                }
             }
         }
     }

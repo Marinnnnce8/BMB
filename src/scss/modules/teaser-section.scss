@@ -88,12 +88,8 @@
         }
     }
 
-    @media (min-width: $breakpointMobile) {
-        padding: 40px 0 52px;
-    }
-
     @media (min-width: $breakpointTabletPortraitMax) {
-        padding: 88px 0 83px;
+        padding: 40px 0 52px;
 
         .uk-child-width-1-3>* {
             width: calc(100% * 1 / 3.001);
@@ -133,6 +129,13 @@
         .uk-card-title {
             font-size: 28px;
             line-height: 29px;
+        }
+    }
+
+    @media (max-width: $breakpointMobile) {
+        .uk-container {
+            padding-left: 25px;
+            padding-right: 25px;
         }
     }
 }

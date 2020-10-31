@@ -31,15 +31,19 @@
     }
 
     @media (min-width: $breakpointMobile) {
-        padding: 26px 18px 30px 27px;
+        padding: 23px 18px 26px 27px;
     }
 
     @media (min-width: $breakpointTabletPortrait) {
-        padding: 41px 18px 41px 27px;
+        padding: 28px 18px 26px 27px;
+
+        .uk-width-expand {
+            padding-right: 15px;
+        }
     }
 
     @media (min-width: $breakpointMedium) {
-        padding: 41px 78px 41px 100px;
+        padding: 28px 78px 26px 100px;
     }
 
     @media (min-width: $breakpointLarge) {

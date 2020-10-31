@@ -1,10 +1,30 @@
 .intro-section {
-    padding: 50px 0 100px;
+    padding: 50px 0 46px;
     text-align: left;
+
+    @media (min-width: $breakpointTabletPortrait) {
+        padding: 50px 0 100px;
+    }
 
     @media (min-width: $breakpointMedium) {
         padding: 60px 0 40px;
         text-align: center;
+    }
+
+    @media (max-width: $breakpointTabletPortrait) and (min-width: $breakpointMobile) {
+        .uk-container {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+    }
+
+    @media (max-width: $breakpointMobile) {
+        padding: 50px 0 80px;
+
+        .uk-container {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
     }
 }
 
@@ -16,14 +36,20 @@
     }
 
     @media (min-width: $breakpointMedium) {
-        width: 75%;
+        width: 74%;
     }
+
     @media (max-width: $breakpointMedium) {
         align-items: flex-start;
     }
 }
 
 .intro-text {
+    p {
+        margin-bottom: 0;
+        color: $black;
+    }
+
     @media (min-width: $breakpointMedium) {
         width: 70%;
     }

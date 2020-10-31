@@ -16,12 +16,25 @@
     @media (min-width: $breakpointLarge) {
         padding: 90px 0 100px;
     }
+
+    @media (max-width: $breakpointMobile) {
+        padding: 75px 0 77px;
+
+        .uk-container {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
 }
 
 .druck-title,
 .druck-text {
-    max-width: 851px;
+    max-width: 774px;
     width: 100%;
+
+    @media (min-width: $breakpointMedium) {
+        max-width: 851px;
+    }
 }
 
 .druck-title h2 {
@@ -50,24 +63,31 @@
             }
         }
     }
+
+    @media (max-width: $breakpointMobile) {
+        .uk-button {
+            margin-top: 10px;
+        }
+    }
 }
 
 .druck-middle {
-    padding: 131px 0 25px;
+    padding: 131px 0 15px;
 
     >svg {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         top: 5px;
-        color: $blue-light;
-        fill: $blue-light;
+        color: rgba($blue, .75);
+        fill: rgba($blue, .75);
         width: 277px;
         height: auto;
     }
 
     h2 {
         margin-bottom: 139px;
+        line-height: 60px;
         max-width: 415px;
     }
 
@@ -84,7 +104,7 @@
     }
 
     @media (min-width: $breakpointTabletPortrait) {
-        padding: 154px 0 25px;
+        padding: 148px 0 25px;
 
         h2 {
             margin-bottom: 75px;
@@ -92,7 +112,7 @@
     }
 
     @media (min-width: $breakpointLarge) {
-        padding: 165px 0 50px;
+        padding: 165px 0 40px;
 
         h2 {
             margin-bottom: 85px;
@@ -101,6 +121,11 @@
 
     @media (max-width: $breakpointTabletPortraitMax) {
         .uk-container {
+
+            &:first-of-type {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
 
             &:nth-of-type(2) {
                 padding-left: 115px;
@@ -115,6 +140,16 @@
             &:nth-of-type(2) {
                 padding-left: 85px;
                 padding-right: 30px;
+            }
+        }
+    }
+
+    @media (max-width: $breakpointMobileMin) {
+        .uk-container {
+
+            &:nth-of-type(2) {
+                padding-left: 25px;
+                padding-right: 25px;
             }
         }
     }
@@ -209,7 +244,7 @@
             max-width: 256px;
             margin-right: 15px;
             width: 100%;
-            min-height: 0;
+            min-height: 256px;
         }
 
         *+.uk-grid-margin,
@@ -243,16 +278,12 @@
             margin-top: 40px;
         }
 
-        .uk-card-body {
-            padding-top: 15px;
-        }
-
         .uk-card-title {
             font-size: 22px;
         }
     }
 
-    @media (max-width: $breakpointMobile) {
+    @media (max-width: $breakpointMobileMin) {
         h2 {
             font-size: 32px;
         }

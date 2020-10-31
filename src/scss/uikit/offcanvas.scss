@@ -71,6 +71,10 @@
         width: 100%;
     }
 
+    @media (min-width: $breakpointMobileMax) {
+        padding: 20px 150px;
+    }
+
     @media (min-width: $breakpointTabletPortrait) {
         ul {
             width: 70%;
@@ -82,14 +86,18 @@ $links: 8;
 
 // Set delay per List Item
 @for $i from 1 through $links {
+    $delay: .045 * $i;
+
     .nav-link:nth-child(#{$i}) {
-        animation-delay: .045s * $i;
+        animation-delay: #{$delay}s;
     }
 }
 
 // Set delay per List Item
 @for $i from 1 through $links {
+    $delay: .625 * $i;
+
     .animation-slide-out .nav-link:nth-child(#{$i}) {
-        animation-delay: .625 * $i;
+        animation-delay: #{$delay}s;
     }
 }

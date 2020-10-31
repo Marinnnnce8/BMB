@@ -5,32 +5,70 @@
 
 .lettershop-banner {
     display: block;
-    min-height: 449px;
+    min-height: 247px;
+
+    @media (min-width: $breakpointTabletPortrait) {
+        min-height: 449px;
+    }
 }
 
 .lettershop-intro {
-    padding: 151px 0 40px;
+    padding: 141px 0 40px;
 
     >svg {
-        width: 550px;
-        height: 550px;
+        width: 400px;
+        height: 400px;
         color: $white;
         fill: $white;
-        top: -80px;
+        top: -9px;
+        left: 0;
+        transform: translate(0);
     }
 
     h2 {
         line-height: 60px;
         color: $black;
     }
+
+    @media (min-width: $breakpointMobile) {
+
+        >svg {
+            width: 550px;
+            height: 550px;
+            top: -85px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    @media (min-width: $breakpointLarge) {
+        padding: 151px 0 40px;
+    }
 }
 
 .lettershop-intro-text {
-    max-width: 1064px;
+    max-width: 94%;
+
+    p {
+        color: $black;
+        margin-bottom: 35px;
+    }
+
+    @media (min-width: $breakpointMobile) {
+        max-width: 771px;
+
+        p {
+            margin-bottom: 50px;
+        }
+    }
+
+    @media (min-width: $breakpointLarge) {
+        max-width: 1064px;
+    }
 }
 
 .lettershop-bottom {
-    padding: 30px 0 70px;
+    padding: 30px 0;
 
     h2 {
         margin-bottom: 27px;
@@ -38,6 +76,7 @@
     }
 
     @media (min-width: $breakpointMobile) {
+        padding: 30px 0 10px;
 
         h2 {
             margin-bottom: 71px;
@@ -52,9 +91,20 @@
     }
 
     @media (min-width: $breakpointMedium) {
+        padding: 30px 0 65px;
 
         h2 {
             margin-bottom: 60px;
+        }
+    }
+
+    @media (min-width: $breakpointLarge) {
+        padding: 30px 0;
+    }
+
+    @media (max-width: $breakpointTabletPortrait) and (min-width: $breakpointMobileM) {
+        .uk-container:last-of-type {
+            padding-left: 65px;
         }
     }
 }
