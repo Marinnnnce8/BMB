@@ -146,6 +146,11 @@
 .footer-bottom {
     padding: 44px 0 30px;
 
+    .uk-flex-wrap>a,
+    .uk-flex-wrap>p {
+        margin-bottom: 15px;
+    }
+
     a,
     p {
         font-size: 20px;
@@ -196,6 +201,8 @@
 
     p {
         margin-right: 66px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     @media (min-width: $breakpointMobile) {
@@ -208,7 +215,7 @@
     }
 
     @media (min-width: $breakpointTabletPortrait) {
-        padding: 45px 0 25px;
+        padding: 45px 0 41px;
 
         a {
 
@@ -228,8 +235,22 @@
         }
     }
 
+    p span {
+        &:last-of-type {
+            display: inline-block;
+        }
+
+        &:first-of-type {
+            display: none;
+        }
+    }
+
     @media (min-width: $breakpointMedium) {
-        padding: 22px 0 29px;
+        padding: 40px 0 29px;
+
+        .uk-container {
+            padding-right: 75px;
+        }
     }
 
     @media (max-width: $breakpointMedium) and (min-width: $breakpointTabletPortrait) {
@@ -258,6 +279,17 @@
 
         p {
             margin-right: 79px;
+        }
+    }
+
+    @media (max-width: $breakpointMedium) and (min-width: $breakpointTabletPortraitMax) {
+        p span {
+            &:first-of-type {
+                display: inline-block;
+            }
+            &:last-of-type {
+                display: none;
+            }
         }
     }
 
