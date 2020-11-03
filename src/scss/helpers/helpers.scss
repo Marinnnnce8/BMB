@@ -13,13 +13,13 @@ html,
 body {
 	overflow-x: hidden;
 	font-family: $font-default;
-	font-feature-settings: 'liga'off;
 	width: 100%;
 	position: relative;
 	font-size: 16px;
 
-	&.scroll-off {
-		height: 100vh;
+	&.has-scroll {
+		overflow: hidden;
+		height: 100%;
 	}
 }
 

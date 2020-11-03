@@ -4,7 +4,8 @@
     width: 100%;
     left: 0;
     top: 0;
-    height: 100vh;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
     z-index: 1024;
     bottom: 0;
     transform: translateX(-100%);
@@ -67,17 +68,21 @@
 }
 
 .bmb-offcanvas-bar {
-    overflow-y: auto;
+    overflow-y: scroll;
     background-color: $blue;
     height: 100%;
-    padding: 20px 40px;
+    padding: 89px 40px 20px;
 
     ul {
         width: 100%;
     }
 
+    @media (min-width: $breakpointMobile) {
+        padding: 126px 40px 20px;
+    }
+
     @media (min-width: $breakpointMobileMax) {
-        padding: 20px 150px;
+        padding: 126px 150px 20px;
     }
 
     @media (min-width: $breakpointTabletPortrait) {

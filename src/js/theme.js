@@ -40,15 +40,25 @@ var theme = {
 
 	//toggle responsive navigation
 	toggleMenu: function() {
+		var header = document.getElementsByClassName('header')[0];
+		var body = document.getElementsByTagName('body')[0];
+		var html = document.getElementsByTagName('html')[0];
+		var headerAttr = '{"animation":"uk-animation-slide-top","show-on-up":true}';
 		var menu = document.getElementsByClassName('js-menu')[0];
-		var isHidden = menu.getAttribute('aria-hidden');
+        var isHidden = menu.getAttribute('aria-hidden');
 
 		if(isHidden === 'true') {
+            body.classList.add('has-scroll');
+            html.classList.add('has-scroll');
+            header.removeAttribute('data-uk-sticky');
 			menu.style.display = 'block';
 			menu.classList.remove('animation-slide-out');
 			menu.classList.add('animation-slide-in');
 			menu.setAttribute('aria-hidden', 'false');
 		} else {
+            body.classList.remove('has-scroll');
+            html.classList.remove('has-scroll');
+            header.setAttribute('data-uk-sticky', headerAttr);
 			menu.classList.remove('animation-slide-in');
 			menu.classList.add('animation-slide-out');
 			setTimeout(function () {
@@ -57,7 +67,6 @@ var theme = {
 			menu.setAttribute('aria-hidden', 'true');
 		}
 	},
-
 
 	//check if terms accepted 
 	checkTerms: function() {
