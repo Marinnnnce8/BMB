@@ -1,17 +1,5 @@
 @media screen and (-ms-high-contrast: active),
 screen and (-ms-high-contrast: none) {
-    .uk-button-default {
-        @include hover {
-            background-color: $pink;
-            color: $white;
-
-            svg {
-                color: $white;
-                fill: $white;
-            }
-        }
-    }
-
     .banner {
         &.internal .banner-inner {
             padding-top: 125px;
@@ -32,6 +20,7 @@ screen and (-ms-high-contrast: none) {
 
     .teaser-section .uk-card {
         padding-bottom: 50px;
+        height: au;
 
         svg {
             color: $gray-dark;

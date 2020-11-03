@@ -54,12 +54,15 @@
     .uk-button {
         margin-top: 25px;
 
-        @include hover {
-            background-color: $white;
+        svg {
+            color: $blue;
+            fill: $blue;
+        }
 
+        @include hover {
             svg {
-                color: $blue;
-                fill: $blue;
+                color: $white;
+                fill: $white;
             }
         }
     }
