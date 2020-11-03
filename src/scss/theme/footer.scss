@@ -352,15 +352,16 @@
         }
     }
 
-    @media (max-width: $breakpointMobileMin) {
+    @media (max-width: $breakpointMobileMedium) {
         a {
             &:last-of-type {
-                display: block;
+                display: inline-flex;
                 max-width: 100%;
-                width: 100%;
+                width: auto;
 
                 span {
-                    width: 100%;
+                    width: auto;
+                    max-width: 100%;
                     text-align: left;
                 }
             }
