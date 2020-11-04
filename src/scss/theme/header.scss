@@ -75,7 +75,7 @@
                 height: 23px;
             }
 
-            @include hover {
+            @include hover-no-focus {
 
                 &:before,
                 &:after {
