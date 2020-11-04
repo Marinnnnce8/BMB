@@ -9,11 +9,10 @@ $iconLineGap: 5px;
     height: 33px;
     transform: rotate(0deg);
     z-index: 1025;
-    position: static;
-    right: auto;
 
     &.burger-active {
         position: fixed;
+        top: 28px;
         right: 15px;
     }
 
@@ -58,6 +57,7 @@ $iconLineGap: 5px;
         padding: 10px;
 
         &.burger-active {
+            top: 41px;
             right: 46px;
         }
 

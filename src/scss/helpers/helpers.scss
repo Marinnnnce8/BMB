@@ -19,7 +19,8 @@ body {
 
 	&.has-scroll {
 		overflow: hidden;
-		height: 100%;
+		height: auto;
+		-webkit-overflow-scrolling: touch;// sass-lint:disable-line no-vendor-prefixes
 	}
 }
 

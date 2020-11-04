@@ -37,7 +37,6 @@ var theme = {
 		}
 	},
 
-
 	//toggle responsive navigation
 	toggleMenu: function() {
 		var header = document.getElementsByClassName('header')[0];
@@ -45,17 +44,20 @@ var theme = {
 		var html = document.getElementsByTagName('html')[0];
 		var headerAttr = '{"animation":"uk-animation-slide-top","show-on-up":true}';
 		var menu = document.getElementsByClassName('js-menu')[0];
+		var burgerButton = document.getElementsByClassName('js-burger')[0];
         var isHidden = menu.getAttribute('aria-hidden');
 
 		if(isHidden === 'true') {
             body.classList.add('has-scroll');
             html.classList.add('has-scroll');
+            burgerButton.classList.add('burger-active');
             header.removeAttribute('data-uk-sticky');
 			menu.style.display = 'block';
 			menu.classList.remove('animation-slide-out');
 			menu.classList.add('animation-slide-in');
 			menu.setAttribute('aria-hidden', 'false');
 		} else {
+            burgerButton.classList.remove('burger-active');
             body.classList.remove('has-scroll');
             html.classList.remove('has-scroll');
             header.setAttribute('data-uk-sticky', headerAttr);
