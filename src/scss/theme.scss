@@ -43,8 +43,8 @@
 // uikit/utility
 .uk-logo {
 	padding: 0;
-	min-height: 0;	
-    max-width: 94.1%;
+	min-height: 0;
+	max-width: 94.1%;
 
 	img {
 		height: auto;
@@ -59,8 +59,8 @@
 		max-width: 465px;
 	}
 
-	@media (min-width: $breakpointMedium) {
-		max-width: 74%;
+	@media (max-width: $breakpointMediumMaxMin) and (min-width: $breakpointMedium) {
+		max-width: 345px;
 	}
 
 	@media (min-width: $breakpointLarge) {
@@ -80,7 +80,7 @@
 	max-width: 598px;
 }
 
-@media (max-width: $breakpointSmallMax - 1) {
+@media (max-width: $breakpointSmallMaxMin) {
 	.uk-grid {
 		margin-left: -18px;
 

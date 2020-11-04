@@ -5,7 +5,7 @@
     left: 0;
     top: 0;
     height: 100%;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;// sass-lint:disable-line no-vendor-prefixes
     z-index: 1024;
     bottom: 0;
     transform: translateX(-100%);

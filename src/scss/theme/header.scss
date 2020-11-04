@@ -51,7 +51,7 @@
                 transition: transform $duration $easeOutBack, opacity $duration;
             }
 
-            @include hover {
+            @include hover-no-focus {
 
                 &:before,
                 &:after {
@@ -94,12 +94,29 @@
         padding: 41px 46px;
     }
 
-    @media (min-width: $breakpointMedium) {
-        padding: 41px 63px 41px 70px;
-    }
-
     @media (min-width: $breakpointLarge) {
         padding: 42px 63px 42px 60px;
+    }
+
+    @media (max-width: $breakpointMediumMaxMin) and (min-width: $breakpointMedium) {
+        padding: 42px 20px 42px 43px;
+
+        .uk-navbar-nav>li {
+            padding: 0 11px;
+
+            &:first-of-type {
+                padding: 0 5px 0 0;
+
+                >a svg {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+
+            >a {
+                font-size: 18px;
+            }
+        }
     }
 
     @media (max-width: $breakpointSmallMax) {
