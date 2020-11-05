@@ -1,31 +1,3 @@
-//----------  input placeholder
-//------------------------------------------------------------------------------
-@mixin placeholder {
-	&::-webkit-input-placeholder {
-		@content;
-	}
-
-	&:-moz-placeholder {
-		@content;
-	}
-
-	&::-moz-placeholder {
-		@content;
-	}
-
-	&:-ms-input-placeholder {
-		@content;
-	}
-}
-
-//----------  Text Overflow
-//------------------------------------------------------------------------------
-@mixin text-truncate {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-
 //	Visually hidden mixin for accessibility
 @mixin visually-hidden() {
 	border: 0;
