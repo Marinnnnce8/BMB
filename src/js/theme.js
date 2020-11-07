@@ -78,8 +78,14 @@ var theme = {
 		var cookieBannerHeight = cookieBanner.offsetHeight;
 		var bmbBody = document.getElementsByTagName('body')[0];
 
+		if (window.matchMedia("screen and (max-width: 1024px)").matches) {
+			buttonScrollBottomOffset = 50;
+		}
+		if (window.matchMedia("screen and (max-width: 768px)").matches) {
+			buttonScrollBottomOffset = 29;
+		}
 		if (window.matchMedia("screen and (max-width: 414px)").matches) {
-			buttonScrollBottomOffset = 30;
+			buttonScrollBottomOffset = 45;
 		}
 
 		if(localStorage.terms === 'accepted') {
@@ -103,8 +109,14 @@ var theme = {
 			var bmbBody = document.getElementsByTagName('body')[0];
 			bmbBody.style.paddingBottom = 0;
 
+			if (window.matchMedia("screen and (max-width: 1024px)").matches) {
+				buttonScrollBottomOffset = 50;
+			}
+			if (window.matchMedia("screen and (max-width: 768px)").matches) {
+				buttonScrollBottomOffset = 29;
+			}
 			if (window.matchMedia("screen and (max-width: 414px)").matches) {
-				buttonScrollBottomOffset = 30;
+				buttonScrollBottomOffset = 45;
 			}
 
 			bmbBody.style.paddingBottom = cookieBannerHeight + 'px';
@@ -121,8 +133,14 @@ var theme = {
 		var bmbBody = document.getElementsByTagName('body')[0];
 		localStorage.setItem('terms', 'accepted');
 
+		if (window.matchMedia("screen and (max-width: 1024px)").matches) {
+			buttonScrollBottomOffset = 50;
+		}
+		if (window.matchMedia("screen and (max-width: 768px)").matches) {
+			buttonScrollBottomOffset = 29;
+		}
 		if (window.matchMedia("screen and (max-width: 414px)").matches) {
-			buttonScrollBottomOffset = 30;
+			buttonScrollBottomOffset = 45;
 		}
 
 		bmbBody.style.transition = 0.55 + 's' + ' ease-out';

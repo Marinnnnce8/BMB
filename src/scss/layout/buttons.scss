@@ -127,8 +127,8 @@ input[type='submit'] {
 	background-color: $gray;
 	border: 1px solid $white;
 	position: fixed;
-	bottom: 30px;
-	right: 22px;
+	bottom: 43px;
+	right: 7px;
 	transform: translateX(calc(100% + 22px));
 	width: 44px;
 	height: 44px;
@@ -147,7 +147,7 @@ input[type='submit'] {
 		margin: 0;
 	}
 
-	@media (min-width: $breakpointMobile) {
-		bottom: 40px;
+	@media (min-width: $breakpointMobileX) {
+		right: 22px;
 	}
 }

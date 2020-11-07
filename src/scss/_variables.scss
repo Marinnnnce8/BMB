@@ -87,8 +87,9 @@ $breakpointMediumMaxMin: ($breakpointMediumMax - 1);
 $breakpointLargeMax: ($breakpointXlarge - 1);
 $breakpointMobileMax: 640px;
 $breakpointMobile: 415px;
+$breakpointMobileX: ($breakpointMobile + 1);
 $breakpointMobileM: ($breakpointMobile - 1);
-$breakpointMobileMedium: 410px;
+$breakpointMobileMedium: 370px;
 $breakpointMobileMin: 375px;
 
 // Spacing
