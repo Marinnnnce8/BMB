@@ -39,6 +39,12 @@
         }
     }
 
+    @media (max-width: $breakpointLaptop) and (min-width: $breakpointTabletPortraitMax) {
+        .uk-background-cover {
+            background-position: 50% 0%;
+        }
+    }
+
     @media (min-width: $breakpointTabletPortraitMax) {
         span {
             min-height: 382px;
@@ -134,11 +140,11 @@
 }
 
 .about-wrap {
-    @media (min-width: $breakpointTabletPortrait) {
+    @media (min-width: $breakpointLaptop) {
         margin-bottom: 10px;
     }
 
-    @media (max-width: $breakpointTabletPortraitMax) {
+    @media (max-width: $breakpointLaptopSmall) {
         flex-direction: column;
 
         .uk-width-1-2 {

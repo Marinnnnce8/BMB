@@ -74,6 +74,8 @@ $breakpointSmall: 640px;
 $breakpointTabletPortrait: 769px;
 $breakpointTabletPortraitMax: ($breakpointTabletPortrait - 1);
 $breakpointTabletPortraitMin: ($breakpointTabletPortraitMax - 1);
+$breakpointLaptop: 1150px;
+$breakpointLaptopSmall: ($breakpointLaptop - 1);
 $breakpointMedium: 1025px;
 $breakpointLarge: 1441px;
 $breakpointXlarge: 1600px;
