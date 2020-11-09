@@ -51,7 +51,7 @@ $iconLineGap: 5px;
         }
     }
 
-    @media (min-width: $breakpointMobile) {
+    @media (min-width: $breakpointMobileMax) {
         width: 44px;
         height: 44px;
         padding: 10px;
@@ -101,7 +101,7 @@ $iconLineGap: 5px;
         }
     }
 
-    @media (min-width: $breakpointMobile) {
+    @media (min-width: $breakpointMobileMax) {
         >span>span {
             &:first-child {
                 transform: translateX(-50%) translateY(4px + $iconLineGap) rotate(45deg);

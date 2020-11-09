@@ -20,7 +20,17 @@ body {
 	&.has-scroll {
 		overflow: hidden;
 		height: auto;
-		-webkit-overflow-scrolling: touch;// sass-lint:disable-line no-vendor-prefixes
+		-webkit-overflow-scrolling: touch; // sass-lint:disable-line no-vendor-prefixes
+
+		.header {
+			padding-right: 48px;
+		}
+	}
+
+	@media (min-width: $breakpointMobileMax) {
+		&.has-scroll .header {
+			padding-right: 59px;
+		}
 	}
 }
 

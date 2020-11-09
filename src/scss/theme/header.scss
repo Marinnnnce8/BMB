@@ -3,12 +3,9 @@
     padding: 28px 15px 28px 14px;
     box-shadow: 0 1px 3px rgba($black, .161);
 
-    .uk-logo {
-        padding: 44px 0;
-    }
-
     .uk-navbar {
         position: static;
+        width: 100%;
     }
 
     .uk-navbar-nav>li {
@@ -123,5 +120,11 @@
         .uk-navbar-nav {
             display: none;
         }
+    }
+
+    @media (max-width: $breakpointMobileMax) {
+        display: flex;
+        align-items: center;
+        min-height: 89px;
     }
 }
