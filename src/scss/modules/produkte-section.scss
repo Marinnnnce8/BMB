@@ -134,7 +134,7 @@
         margin-right: 13px;
     }
 
-    @media (min-width: $breakpointMobile) {
+    @media (min-width: $breakpointMobileMax) {
         padding-bottom: 67px;
     }
 
@@ -227,7 +227,7 @@
         }
     }
 
-    @media (max-width: $breakpointTabletPortraitMax) and (min-width: $breakpointMobile) {
+    @media (max-width: $breakpointTabletPortraitMax) and (min-width: $breakpointMobileMax) {
 
         *+.uk-grid-margin,
         .uk-grid+.uk-grid,
@@ -286,7 +286,7 @@
         }
     }
 
-    @media (max-width: $breakpointMobile) {
+    @media (max-width: $breakpointMobileMaxMin) {
         padding-bottom: 65px;
 
         .uk-card-body {
