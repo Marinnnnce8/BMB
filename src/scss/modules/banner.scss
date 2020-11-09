@@ -219,12 +219,21 @@
 			}
 
 			.banner-inner {
-				left: 25px;
-				transform: translateY(-99%);
+				top: 40vh;
+				left: 55px;
+				transform: translateY(-50%);
 			}
 
 			h1 {
 				font-size: 35px;
+			}
+		}
+	}
+
+	@media (max-width: $breakpointMobileM) {
+		&:not(.internal) {
+			.banner-inner {
+				left: 25px;
 			}
 		}
 	}
