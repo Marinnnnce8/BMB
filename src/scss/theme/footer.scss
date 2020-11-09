@@ -200,9 +200,13 @@
     }
 
     p {
-        margin-right: 66px;
+        padding-right: 25px;
         margin-top: 0;
         margin-bottom: 0;
+
+        &:last-of-type {
+            display: none;
+        }
     }
 
     @media (min-width: $breakpointMobile) {
@@ -330,9 +334,16 @@
         }
 
         p {
-            width: 100%;
-            max-width: 27%;
-            margin-right: 112px;
+            display: inline-block;
+            padding-right: 112px;
+
+            &:first-of-type {
+                display: none;
+            }
+
+            &:last-of-type {
+                display: inline-block;
+            }
         }
     }
 
@@ -348,8 +359,7 @@
         }
 
         p {
-            max-width: 44%;
-            margin-right: 15px;
+            padding-right: 25px;
         }
     }
 
@@ -362,11 +372,11 @@
                 text-align: center;
             }
         }
+    }
 
+    @media (max-width: $breakpointMobileMMin) {
         p {
-            max-width: 59%;
-            margin-right: 0;
-            padding-right: 7px;
+            width: 100%;
         }
     }
 
@@ -392,8 +402,6 @@
 
         p {
             display: block;
-            max-width: 100%;
-            width: 100%;
         }
     }
 }

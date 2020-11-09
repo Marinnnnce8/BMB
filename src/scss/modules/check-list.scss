@@ -78,6 +78,7 @@
 
         .uk-child-width-1-4>* {
             width: auto;
+            // max-width: calc(100% / 3);
             max-width: 50%;
         }
 
