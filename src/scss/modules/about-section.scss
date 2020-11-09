@@ -120,7 +120,7 @@
         padding: 33px 85px 50px;
     }
 
-    @media (max-width: $breakpointLarge) and (min-width: $breakpointSmallMax) {
+    @media (max-width: $breakpointSmallMax) and (min-width: $breakpointTabletPortrait) {
         text-align: left;
     }
 
