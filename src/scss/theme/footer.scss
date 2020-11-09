@@ -209,13 +209,12 @@
         }
     }
 
+    .folgen-mob {
+        display: none;
+    }
+
     @media (min-width: $breakpointMobile) {
         padding: 44px 0 13px;
-
-        svg {
-            width: 44px;
-            height: 44px;
-        }
     }
 
     @media (min-width: $breakpointTabletPortrait) {
@@ -233,8 +232,6 @@
         }
 
         svg {
-            width: 34px;
-            height: 34px;
             margin-left: 20px;
         }
     }
@@ -298,6 +295,13 @@
         }
     }
 
+    @media (max-width: $breakpointTabletPortraitMax) and (min-width: $breakpointMobileMax) {
+        a svg {
+            width: 44px;
+            height: 44px;
+        }
+    }
+
     @media (max-width: $breakpointTabletPortraitMax) {
         .uk-container {
             padding-left: 25px;
@@ -322,15 +326,14 @@
                 margin-right: 0;
                 margin-left: 0;
             }
+        }
 
-            &:last-of-type {
+        .folgen-mob {
+            display: inline-flex;
+        }
 
-                span {
-                    width: 100%;
-                    max-width: 43%;
-                    display: inline-block;
-                }
-            }
+        .folgen-desk {
+            display: none;
         }
 
         p {
@@ -365,10 +368,11 @@
 
     @media (max-width: $breakpointMobile) {
         a:last-of-type {
-            max-width: 36%;
+            max-width: 100%;
+            width: auto;
 
             span {
-                max-width: 56%;
+                max-width: 100%;
                 text-align: center;
             }
         }
@@ -381,22 +385,20 @@
     }
 
     @media (max-width: $breakpointMobileMedium) {
-        a {
-            &:last-of-type {
-                display: inline-flex;
-                max-width: 100%;
+        a:nth-of-type(4) {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+
+        .folgen-mob {
+            display: inline-flex;
+            max-width: 100%;
+            width: auto;
+
+            span {
                 width: auto;
-
-                span {
-                    width: auto;
-                    max-width: 100%;
-                    text-align: left;
-                }
-            }
-
-            &:nth-of-type(4) {
-                margin-right: 0;
-                margin-bottom: 15px;
+                max-width: 100%;
+                text-align: left;
             }
         }
 
