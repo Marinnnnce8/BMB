@@ -94,6 +94,12 @@
     }
 
     @media (max-width: $breakpointTabletPortraitMin) {
+        .uk-child-width-1-4>* {
+            width: 50%;
+        }
+    }
+
+    @media (max-width: $breakpointMobileMax) {
         .uk-grid {
             justify-content: center;
         }

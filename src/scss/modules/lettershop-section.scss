@@ -112,4 +112,11 @@
             padding-left: 65px;
         }
     }
+
+    @media (max-width: $breakpointTabletPortraitMin) {
+        .uk-container:nth-of-type(2) {
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+    }
 }

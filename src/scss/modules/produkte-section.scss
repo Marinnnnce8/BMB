@@ -12,9 +12,14 @@
 .produkte-intro {
     padding: 167px 0 0;
 
+    >span {
+        display: block;
+    }
+
     .uk-svg,
     .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
         width: calc(100% - 50px);
+        display: block;
         height: 500px;
         color: $gray-light;
         fill: $gray-light;
