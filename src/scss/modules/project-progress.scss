@@ -32,7 +32,7 @@
         width: 44px;
         height: 44px;
         position: absolute;
-        top: 110px;
+        top: 103px;
 
         &.down {
             transform: rotate(30deg);
@@ -116,7 +116,7 @@
         }
 
         .uk-card-title {
-            text-align: left;
+            text-align: center;
             max-width: 156px;
         }
 
@@ -143,13 +143,13 @@
         .uk-card-title {
             font-size: 13px;
             line-height: 15px;
-            max-width: 120px;
+            width: 120px;
         }
 
         .arrow {
             width: 33px;
             height: 33px;
-            top: 85px;
+            top: 74px;
 
             &.down {
                 left: 113px;
@@ -158,16 +158,44 @@
         }
     }
 
+    @media (max-width: $breakpointMobileBetween) {
+        .uk-card {
+            width: auto;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
     @media (max-width: $breakpointMobile) {
         .arrow {
             top: 72px;
+        }
+    }
+
+    @media (max-width: $breakpointMobileMin) {
+        .uk-card-media-top {
+            width: 75px;
+        }
+
+        .arrow {
+            top: 45px;
+
+            &:not(.down) {
+                top: 55px;
+            }
+
+            &.down {
+                left: 80px;
+            }
         }
     }
 }
 
 .progress-inner {
     @media (max-width: $breakpointTabletPortraitMax) {
-        padding-left: 85px;
+        padding-left: 0;
+        align-items: center;
+        display: flex;
         flex-direction: column;
 
         .progress-box {
@@ -190,17 +218,30 @@
             &:nth-of-type(3),
             &:nth-of-type(7) {
                 padding-left: 135px;
-
             }
         }
     }
 
-    @media (max-width: $breakpointMobileMin) {
+    @media (max-width: $breakpointMobile) {
         .progress-box {
 
             &:nth-of-type(3),
             &:nth-of-type(7) {
-                padding-left: 60px;
+                padding-left: 110px;
+            }
+        }
+    }
+
+    @media (max-width: $breakpointMobileBetween) {
+        align-items: flex-start;
+
+        .progress-box {
+
+            &:nth-of-type(3),
+            &:nth-of-type(7) {
+                padding-left: 0;
+                justify-content: flex-end;
+                width: 100%;
             }
         }
     }

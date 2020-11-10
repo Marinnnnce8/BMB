@@ -1,6 +1,13 @@
 .lettershop-section {
     background-color: $blue-mid;
     border-top: 37px solid $pink;
+
+    @media (max-width: $breakpointTabletPortraitMax) {
+        .uk-container {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
 }
 
 .lettershop-banner {
