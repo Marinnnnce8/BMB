@@ -31,7 +31,17 @@
 		}
 
 		h1 {
-			background: $blue 0% 0% no-repeat padding-box;
+			// background: $blue 0% 0% no-repeat padding-box;
+			display: flex;
+			flex-direction: column;
+
+			span {
+				display: inline-block;
+				padding: 0 10px;
+				margin-bottom: 10px;
+				width: auto;
+				background-color: $blue;
+			}
 
 			&:last-of-type {
 				display: none;
@@ -93,6 +103,10 @@
 
 			h1 {
 				line-height: 1.32;
+
+				span {
+					padding: 0 20px;
+				}
 			}
 		}
 	}
@@ -121,13 +135,13 @@
 			>svg {
 				width: 305px;
 				height: 305px;
-				left: 35px;
+				left: -25px;
 				top: 56px;
 			}
 
 			.banner-inner {
 				transform: translateY(-61%);
-				left: 189px;
+				left: 125px;
 			}
 
 			h1 {
@@ -138,6 +152,10 @@
 
 	@media (min-width: $breakpointMedium) {
 		&:not(.internal) {
+			h1 span {
+				padding: 0 35px 0 20px;
+			}
+
 			>svg {
 				width: 325px;
 				height: 325px;
@@ -234,6 +252,22 @@
 		&:not(.internal) {
 			.banner-inner {
 				left: 25px;
+			}
+		}
+	}
+
+	@media (max-width: $breakpointMobileMin) {
+		&:not(.internal) {
+			.banner-inner {
+				left: 5px;
+
+				h1 {
+					font-size: 34px;
+
+					span {
+						padding: 0 3px;
+					}
+				}
 			}
 		}
 	}
