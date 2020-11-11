@@ -89,7 +89,6 @@
 .about-text {
     background-color: $blue-mid;
     padding: 33px 25px 55px;
-    text-align: left;
 
     blockquote {
         padding-top: 30px;
@@ -111,7 +110,6 @@
 
     @media (min-width: $breakpointMobile) {
         padding: 37px 28px 25px;
-        text-align: center;
 
         h2 {
             margin: 57px 0 15px;
@@ -130,8 +128,13 @@
         text-align: left;
     }
 
+    @media (max-width: $breakpointTabletPortrait) and (min-width: $breakpointMobileMax) {
+        text-align: center;
+    }
+
     @media (min-width: $breakpointLarge) {
         padding: 50px 88px 50px 50px;
+        text-align: center;
 
         h2 {
             margin: 55px 0 25px;
