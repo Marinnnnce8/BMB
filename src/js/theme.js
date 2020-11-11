@@ -9,6 +9,7 @@ var theme = {
 	init: function() {
 		var menuButton = document.getElementsByClassName('js-burger')[0];
 		var scrollLink = document.querySelectorAll('.js-scroll');
+		var sectionNavLink = document.querySelectorAll('.js-section-nav');
 		var cookieButton = document.getElementsByClassName('js-cookies')[0];
 		var buttonScrollTo = document.getElementsByClassName('button-scroll')[0];
 
@@ -28,6 +29,10 @@ var theme = {
 			}
 		}
 
+		if(sectionNavLink) {
+            this.addMultiListener(window, 'load resize', theme.changeScrollOffset);
+		}
+
 		if(cookieButton) {
 			cookieButton.addEventListener('click', this.acceptTerms);
 		}
@@ -35,23 +40,35 @@ var theme = {
 		if(buttonScrollTo) {
 			window.addEventListener('scroll', this.slideButtonInView);
 		}
+    },
+    
+    //combining multiple event listeners
+	addMultiListener: function(element, eventNames, listener) {
+		var events = eventNames.split(' ');
+		for (var i=0, iLen=events.length; i<iLen; i++) {
+			element.addEventListener(events[i], listener, false);
+		}
 	},
 
 	//toggle responsive navigation
 	toggleMenu: function() {
-		var header = document.getElementsByClassName('header')[0];
+        var scrollLink = document.querySelectorAll('.js-scroll');
+        var header = document.getElementsByClassName('header')[0];
+        var headerHeight = header.offsetHeight;
 		var body = document.getElementsByTagName('body')[0];
 		var html = document.getElementsByTagName('html')[0];
-		var headerAttr = '{"animation":"uk-animation-slide-top","show-on-up":true}';
 		var menu = document.getElementsByClassName('js-menu')[0];
 		var burgerButton = document.getElementsByClassName('js-burger')[0];
         var isHidden = menu.getAttribute('aria-hidden');
+
+        for(var i = 0;i < scrollLink.length;i++){
+            scrollLink[i].setAttribute('data-uk-scroll', 'offset: '+ headerHeight);
+        }
 
 		if(isHidden === 'true') {
             body.classList.add('has-scroll');
             html.classList.add('has-scroll');
             burgerButton.classList.add('burger-active');
-            header.removeAttribute('data-uk-sticky');
 			menu.style.display = 'block';
 			menu.classList.remove('animation-slide-out');
 			menu.classList.add('animation-slide-in');
@@ -60,7 +77,6 @@ var theme = {
             burgerButton.classList.remove('burger-active');
             body.classList.remove('has-scroll');
             html.classList.remove('has-scroll');
-            header.setAttribute('data-uk-sticky', headerAttr);
 			menu.classList.remove('animation-slide-in');
 			menu.classList.add('animation-slide-out');
 			setTimeout(function () {
@@ -68,6 +84,21 @@ var theme = {
 			}, 800);
 			menu.setAttribute('aria-hidden', 'true');
 		}
+	},
+
+	//change offset according to header height
+	changeScrollOffset: function() {
+        var isMobile = window.matchMedia("(max-width: 639px)").matches;
+
+        if(isMobile) {
+            var header = document.getElementsByClassName('header')[0];
+            var headerHeight = header.offsetHeight;
+            var sectionNavLink = document.querySelectorAll('.js-section-nav');
+
+            for(var i = 0;i < sectionNavLink.length;i++){
+                sectionNavLink[i].setAttribute('data-uk-scroll', 'offset: '+ headerHeight);
+            }
+        }
 	},
 
 	//check if terms accepted 
