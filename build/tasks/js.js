@@ -1,9 +1,11 @@
 import gulp from 'gulp';
 import config from '../';
+import gzip from 'gulp-gzip';
 import connect from 'gulp-connect';
 
 gulp.task('js-copy', () => {
 	return gulp.src(`${config.src}/js/*.js`)
+		.pipe(gzip())
 		.pipe(gulp.dest(`${config.dist}/js`));
 });
 

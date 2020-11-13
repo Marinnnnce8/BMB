@@ -9,6 +9,7 @@ import flexBugsFix from 'postcss-flexbugs-fixes';
 import sourcemaps from 'gulp-sourcemaps';
 import autoprefixer from 'autoprefixer';
 import rename from 'gulp-rename';
+import gzip from 'gulp-gzip';
 import connect from 'gulp-connect';
 
 // Compile SCSS files
@@ -34,6 +35,7 @@ gulp.task('scss', () => {
 		.pipe(rename('theme.min.css'))
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest(`${config.dist}/css`))
+		.pipe(gzip())
 		.pipe(connect.reload());
 });
 

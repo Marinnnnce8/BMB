@@ -135,9 +135,9 @@
 		<section class="banner uk-position-relative uk-overflow-hidden">
 			<span class="uk-background-cover uk-position-cover" data-uk-img data-src="./img/banner-img.png"
 				role="presentation"></span>
-			<span class="uk-background-cover uk-position-cover" data-uk-img data-src="./img/keyvisual-tablet.jpg"
+			<span class="uk-background-cover uk-position-cover" loading="lazy" data-uk-img data-src="./img/keyvisual-tablet.jpg"
 				role="presentation"></span>
-			<span class="uk-background-cover uk-position-cover" data-uk-img data-src="./img/keyvisual-mobile.jpg"
+			<span class="uk-background-cover uk-position-cover" loading="lazy" data-uk-img data-src="./img/keyvisual-mobile.jpg"
 				role="presentation"></span>
 			<svg viewBox="0 0 512 512">
 				<title>BMB</title>
@@ -1696,7 +1696,7 @@
 
 	<script src="./js/uikit.min.js"></script>
 	<script src="./js/svgxuse.min.js"></script>
-	<script src='./js/theme.min.js'></script>
+	<script defer src='./js/theme.min.js'></script>
 	<script>
 		if ('serviceWorker' in navigator) {
 			console.log('CLIENT: service worker registration in progress.');

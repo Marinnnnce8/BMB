@@ -40,7 +40,7 @@ var theme = {
 		if(buttonScrollTo) {
 			window.addEventListener('scroll', this.slideButtonInView);
 		}
-    },
+	},
     
     //combining multiple event listeners
 	addMultiListener: function(element, eventNames, listener) {
@@ -88,17 +88,22 @@ var theme = {
 
 	//change offset according to header height
 	changeScrollOffset: function() {
-        var isMobile = window.matchMedia("(max-width: 639px)").matches;
+		var isMobile = window.matchMedia("(max-width: 639px)").matches;
+		var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+        var sectionNavLink = document.querySelectorAll('.js-section-nav');
+        var header = document.getElementsByClassName('header')[0];
+        var headerHeight = header.offsetHeight;
 
         if(isMobile) {
-            var header = document.getElementsByClassName('header')[0];
-            var headerHeight = header.offsetHeight;
-            var sectionNavLink = document.querySelectorAll('.js-section-nav');
-
             for(var i = 0;i < sectionNavLink.length;i++){
                 sectionNavLink[i].setAttribute('data-uk-scroll', 'offset: '+ headerHeight);
             }
-        }
+		}
+		if(isIE11){
+			for(var i = 0;i < sectionNavLink.length;i++){
+                sectionNavLink[i].setAttribute('data-uk-scroll', 'offset: '+ headerHeight/2);
+            }
+		}
 	},
 
 	//check if terms accepted 

@@ -65,7 +65,7 @@
 					<li><a class="uk-text-uppercase" href="./index.html#lettershop">LETTERSHOP</a></li>
 					<li><a class="uk-text-uppercase" href="./index.html#produkte">PRODUKTE</a></li>
 					<li><a class="uk-text-uppercase" href="./index.html#uber-uns">ÜBER UNS</a></li>
-					<li><a class="uk-text-uppercase" href="./index.html#kontakt">KONTAKT</a></li>
+					<li><a class="uk-text-uppercase" href="#kontakt" data-uk-scroll="offset: 126">KONTAKT</a></li>
 				</ul>
 				<div class="uk-width-1-1 bmb-offcanvas js-menu" aria-hidden='true'>
 					<div class="bmb-offcanvas-bar uk-width-1-1 uk-flex uk-flex-middle uk-flex-column">
@@ -79,7 +79,8 @@
 							<li class="nav-link"><a class="uk-text-bold" href="./index.html#produkte">Produkte</a></li>
 							<li class="nav-link"><a class="uk-text-bold" href="./index.html#uber-uns">Über
 									Uns</a></li>
-							<li class="nav-link"><a class="uk-text-bold" href="./index.html#kontakt">Kontakt</a></li>
+							<li class="nav-link"><a class="uk-text-bold js-scroll" href="#kontakt"
+									data-uk-scroll="offset: 126">Kontakt</a></li>
 							<li class="nav-link"><a class="uk-text-light" href="./impressum.html">Impressum</a></li>
 							<li class="nav-link"><a class="uk-text-light" href="./datenschutz.html">Datenschutz</a></li>
 						</ul>
@@ -330,7 +331,7 @@
 
 	<script src="./js/uikit.min.js"></script>
 	<script src="./js/svgxuse.min.js"></script>
-	<script src='./js/theme.min.js'></script>
+	<script defer src='./js/theme.min.js'></script>
 	<script>
 		if ('serviceWorker' in navigator) {
 			console.log('CLIENT: service worker registration in progress.');
