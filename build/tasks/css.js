@@ -34,14 +34,15 @@ gulp.task('scss', () => {
 		.pipe(postcss(processors))
 		.pipe(rename('theme.min.css'))
 		.pipe(sourcemaps.write('.'))
+		// .pipe(gzip())
 		.pipe(gulp.dest(`${config.dist}/css`))
-		.pipe(gzip())
 		.pipe(connect.reload());
 });
 
 // Copy CSS UIkit files
 gulp.task('css-uikit', () => {
 	return gulp.src(`${config.uikit}/css/uikit.min.css`)
+	// .pipe(gzip())
 		.pipe(gulp.dest(`${config.dist}/css`));
 });
 

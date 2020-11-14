@@ -291,6 +291,18 @@
         }
     }
 
+    @media (max-width: $breakpointMobileMax) and (min-width: $breakpointMobile) {
+        .uk-card .text {
+            width: 57%;
+        }
+    }
+
+    @media (max-width: $breakpointMobile) {
+        .uk-card .text .uk-text-light {
+            padding-right: 40px;
+        }
+    }
+
     @media (max-width: $breakpointMobileMaxMin) {
         padding-bottom: 65px;
 

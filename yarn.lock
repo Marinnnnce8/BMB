@@ -2811,7 +2811,7 @@ gulp-iconfont@^10.0.3:
   dependencies:
     gulp-spawn "^0.4.4"
     gulp-svg2ttf "^2.0.0"
-    gulp-svgicons2svgfont "^5.0.1"
+    gulp-svg2svgfont "^5.0.1"
     gulp-ttf2eot "^1.1.1"
     gulp-ttf2woff "^1.1.0"
     gulp-ttf2woff2 "^3.0.0"
@@ -2942,16 +2942,16 @@ gulp-svg2ttf@^2.0.0:
     readable-stream "^2.0.4"
     svg2ttf "^4.1.0"
 
-gulp-svgicons2svgfont@^5.0.1:
+gulp-svg2svgfont@^5.0.1:
   version "5.0.1"
-  resolved "https://registry.yarnpkg.com/gulp-svgicons2svgfont/-/gulp-svgicons2svgfont-5.0.1.tgz#c900418d24f097e3e3662b97c754f37c6e68e1b4"
+  resolved "https://registry.yarnpkg.com/gulp-svg2svgfont/-/gulp-svg2svgfont-5.0.1.tgz#c900418d24f097e3e3662b97c754f37c6e68e1b4"
   integrity sha512-wXPQGpQ8bjP2oV25Cq39+r+RjPRQ4u4aCAmBXsXm48Lsx7xfDdTG8dE8uZcheK68pcHTdNm+FK1QMKhKYbwMGA==
   dependencies:
     fancy-log "^1.3.2"
     plugin-error "^1.0.1"
     readable-stream "^2.3.6"
     streamifier "^0.1.1"
-    svgicons2svgfont "^9.0.3"
+    svg2svgfont "^9.0.3"
     vinyl "^2.1.0"
 
 gulp-ttf2eot@^1.1.1:
@@ -6502,9 +6502,9 @@ svg2ttf@^4.1.0:
     svgpath "^2.1.5"
     xmldom "~0.1.22"
 
-svgicons2svgfont@^9.0.3:
+svg2svgfont@^9.0.3:
   version "9.1.1"
-  resolved "https://registry.yarnpkg.com/svgicons2svgfont/-/svgicons2svgfont-9.1.1.tgz#655d30c256176f6e29c96058609ef0a9b0ebf2df"
+  resolved "https://registry.yarnpkg.com/svg2svgfont/-/svg2svgfont-9.1.1.tgz#655d30c256176f6e29c96058609ef0a9b0ebf2df"
   integrity sha512-iOj7lqHP/oMrLg7S2Iv89LOJUfmIuePefXcs5ul4IsKwcYvL/T/Buahz+nQQJygyuvEMBBXqnCRmnvJggHeJzA==
   dependencies:
     commander "^2.12.2"
